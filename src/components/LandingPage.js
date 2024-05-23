@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet'
 import Carousel from './Carousel';
 import Menu from './Menu';
+import AboutSection from './About';
+import UpcomingLocations from './UpcomingLocations';
 
 // import images
 function importAll(r) {
@@ -13,10 +15,6 @@ function importAll(r) {
   const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
   
   // images
-  const aboutImg1 = images['about-1.jpg'];
-  const aboutImg2 = images['about-2.jpg'];
-  const aboutImg3 = images['about-3.jpg'];
-  const aboutImg4 = images['about-4.jpg'];
   const kuyaKevinImg = images['kuya-kevins-main.jpg'];
   const teamImg1 = images['team-1.jpg'];
   const teamImg2 = images['team-2.jpg'];
@@ -112,6 +110,7 @@ const LandingPage = (props) => {
 
         <div className="container-xxl position-relative p-0">
         <img className="img-fluid" src={kuyaKevinImg} alt=""/>
+        <AboutSection/>
             {/* <div className="container-xxl py-5 bg-dark hero-header mb-5"> */}
                 {/* <div className="container my-5 py-5">
                     <div className="row align-items-center g-5">
@@ -128,7 +127,7 @@ const LandingPage = (props) => {
             {/* </div> */}
         </div>
 
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
             <div className="container">
                 <div className="row g-4">
                     <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -169,27 +168,27 @@ const LandingPage = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div className="container-xxl py-5">
+        {/* <div className="container-xxl py-5">
             <div className="container">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-6">
+                    <img style={{width: 'auto', height: 'auto'}} className="img-fluid" data-wow-delay="0.1s" src= {aboutImg1} alt="About"/>
                         <div className="row g-3">
                             <div className="col-6 text-start">
-                            <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src= {aboutImg1} alt="About"/>
-
+                            <img style={{width: 'auto', height: 'auto'}} className="img-fluid" data-wow-delay="0.1s" src= {aboutImg1} alt="About"/>
 
                             </div>
                             <div className="col-6 text-start">
-                            <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src={aboutImg2} style={{ marginTop: '25%' }}/>
+                            <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src={aboutImg1} style={{ marginTop: '25%' }}/>
 
                             </div>
                             <div className="col-6 text-end">
-                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src={aboutImg3}/>
+                                <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src={aboutImg1}/>
                             </div>
                             <div className="col-6 text-end">
-                                <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src={aboutImg4}/>
+                                <img className="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src={aboutImg1}/>
                             </div>
                         </div>
                     </div>
@@ -222,7 +221,7 @@ const LandingPage = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="container-xxl py-5">
             <div className="container">
@@ -571,11 +570,13 @@ const LandingPage = (props) => {
         <div className="col-md-6 bg-dark d-flex align-items-center">
             <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
                 <h5 className="section-title ff-secondary text-start text-warning fw-normal">Find Us!</h5>
-                <h1 className="text-white mb-4">Upcoming Find Us</h1>
+                <h1 className="text-white mb-4">Come Visit Us At These Locations!</h1>
 
-                <div id="upcomingLocations" className="text-white">
+                {/* <div id="upcomingLocations" className="text-white"> */}
+                
  
-                </div>
+                {/* </div> */}
+                <UpcomingLocations/>
                     </div>
                 </div>
  <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
@@ -628,7 +629,7 @@ const LandingPage = (props) => {
                                     </div>
                                 </div>
                                 <div className="col-12">
-                                    <button className="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                    <button className="btn btn-warning w-100 py-3" type="submit">Book Now</button>
                                 </div>
                             </div>
                         </form>
@@ -637,7 +638,7 @@ const LandingPage = (props) => {
             </div>
         </div>
 
-        <div className="container-xxl pt-5 pb-3">
+        {/* <div className="container-xxl pt-5 pb-3">
             <div className="container">
                 <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 className="section-title ff-secondary text-center text-warning fw-normal">Team Members</h5>
@@ -702,7 +703,7 @@ const LandingPage = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container">
@@ -804,7 +805,7 @@ const LandingPage = (props) => {
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Kevins Food Truck Biz</a>, All Rights Reserved. 
+                            &copy; <a className="border-bottom" href="#">Kuya Kevins</a>, All Rights Reserved. 
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">

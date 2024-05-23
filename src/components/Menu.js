@@ -4,90 +4,90 @@ const Menu = () => {
     // import images
 function importAll(r) {
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
     return images;
   }
   
   const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
   
   // images
-  const menuImg1 = images['menu-1.jpg'];
-  const menuImg2 = images['menu-2.jpg'];
-  const menuImg3 = images['menu-3.jpg'];
-  const menuImg4 = images['menu-4.jpg'];
-  const menuImg5 = images['menu-5.jpg'];
-  const menuImg6 = images['menu-6.jpg'];
-  const menuImg7 = images['menu-7.jpg'];
-  const menuImg8 = images['menu-8.jpg'];
+  const fourEggrollImg = images['4_Count_Eggroll.jpg'];
+  const fiveWingsImg = images['5_Count_Marinated_Wings_2.jpg'];
+  const tenWingsImg = images['10_Count_Marinated_Wings_2.jpg'];
+  const bourbonChixImg = images['Bourbon_Chicken_with_Pancit.jpg'];
+  const adoboChixImg = images['Chicken_Adobo_with_Rice.jpg'];
+  const pancitImg1 = images['Pancit_2.jpg'];
+  const pancitImg2 = images['Pancit_3.jpg'];
+  const jasmineRiceImg = images['Jasmine_Rice.jpg'];
+  const glutenFreeImg = images['gluten_free.jpg'];
+  const cokeImg = images['coca_cola_logo.jpg'];
+  
 
-    const menuItems = [
-        {
-          name: "Taco Fries",
-          price: "$8",
-          image: menuImg1,
-          description: "Crispy fries topped with seasoned ground beef, melted cheese, diced tomatoes, and cilantro."
-        },
-        {
-          name: "Sushi Burrito",
-          price: "$10",
-          image: menuImg2,
-          description: "A fusion delight! Fresh sushi ingredients wrapped in a large tortilla, served with soy sauce."
-        },
-        {
-          name: "Mac 'n' Cheese Grilled Cheese",
-          price: "$7",
-          image: menuImg3,
-          description: "Creamy mac 'n' cheese sandwiched between golden, buttery grilled cheese slices."
-        },
-        {
-          name: "Pizza Tacos",
-          price: "$9",
-          image: menuImg4,
-          description: "A crispy taco shell filled with marinara sauce, melted cheese, pepperoni, and topped with fresh basil."
-        },
-        {
-          name: "Donut Burger",
-          price: "$12",
-          image: menuImg5,
-          description: "A juicy beef patty sandwiched between two glazed donuts, with crispy bacon and maple syrup."
-        },
-        {
-          name: "Loaded Tater Tot Nachos",
-          price: "$11",
-          image: menuImg6,
-          description: "Crispy tater tots topped with melted cheese, jalapenos, sour cream, and guacamole."
-        },
-        {
-          name: "Buffalo Chicken Waffle Fries",
-          price: "$9",
-          image: menuImg7,
-          description: "Crispy waffle fries smothered in spicy buffalo chicken, ranch dressing, and blue cheese crumbles."
-        },
-        {
-          name: "Pulled Pork Sliders",
-          price: "$8",
-          image: menuImg8,
-          description: "Slow-cooked pulled pork piled high on mini brioche buns, topped with tangy barbecue sauce."
-        },
-        {
-          name: "Cheesesteak Egg Rolls",
-          price: "$10",
-          image: menuImg1,
-          description: "Philly cheesesteak filling rolled in crispy egg roll wrappers, served with spicy ketchup."
-        },
-        {
-          name: "Fried Chicken and Waffle Sandwich",
-          price: "$12",
-          image: menuImg2,
-          description: "Crispy fried chicken sandwiched between two fluffy waffles, drizzled with maple syrup."
-        }
-      ];
+  const menuItems = [
+    {
+        name: "Meat Eggrolls",
+        price: "2-$6 / 4-$10",
+        image: fourEggrollImg,
+        description: "Crispy eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, green onions, and eggs, perfectly spiced with salt and pepper. Available in 2 or 4 counts."
+    },
+    {
+        name: "Vegetable Eggrolls",
+        price: "2-$5 / 4-$9",
+        image: fourEggrollImg,
+        description: "Delicious vegetarian eggrolls filled with a mix of carrots, potatoes, cabbage, garlic, and onion, lightly seasoned with salt and pepper. Available in 2 or 4 counts."
+    },
+    {
+        name: "Stir Fry Noodles",
+        price: "$9",
+        image: pancitImg2,
+        description: "Flavorful stir fry noodles with garlic, onion, tender chicken, carrots, cabbage, green beans, and celery, tossed in chicken broth and soy sauce, seasoned with salt, pepper, and chicken granules."
+    },
+    {
+        name: "Bourbon Chicken",
+        price: "$10",
+        image: bourbonChixImg,
+        description: "Juicy chicken cooked in a savory bourbon sauce with soy sauce, garlic, ginger, green onions, water, brown sugar, and a touch of pepper flakes for heat, seasoned with salt, pepper, and chicken granules."
+    },
+    {
+        name: "Wings",
+        price: "5-$10 / 10-$17",
+        image: tenWingsImg,
+        description: "Crispy wings marinated in soy sauce, water, and Mama Sita sour powder, coated with a blend of flour and corn starch, seasoned with salt and pepper for a perfect crunch. Available in 5 or 10 counts."
+    },
+    {
+        name: "Pork BBQ",
+        price: "$12",
+        image: jasmineRiceImg,
+        description: "Tender pork marinated in soy sauce and ketchup, sweetened with brown sugar and a hint of pineapple juice, skewered on BBQ sticks and grilled to perfection."
+    },
+    {
+        name: "Adobo",
+        price: "$9",
+        image: adoboChixImg,
+        description: "Classic adobo with chicken simmered in soy sauce, garlic, salt, pepper, and bay leaves, balanced with a touch of sugar and vinegar for a rich and savory flavor."
+    },
+    {
+      name: "Pancit",
+      price: "$10",
+      image: pancitImg1,
+      description: "Traditional Filipino stir-fried noodles with garlic, onions, chicken, shrimp, carrots, cabbage, and green beans, all tossed in a savory soy sauce blend."
+    },
+    {
+      name: "Beverages",
+      name: "Coke Products",
+        price: "$2.50",
+        image: cokeImg,
+        description: "Proudly serving Coke products including Coca-Cola, Diet Coke, Coke Zero Sugar, Sprite, and more."
+    }
+];
+
   return (<>
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h5 className="section-title ff-secondary text-center text-warning fw-normal">Food Menu</h5>
-          <h1 className="mb-5">Most Popular Items</h1>
+          <h5 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h5>
+          <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free"></img>
         </div>
         <div className="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
           <div className="tab-content">
@@ -96,7 +96,7 @@ function importAll(r) {
                 {menuItems.map((menuItem, index) => (
                   <div key={index} className="col-lg-6">
                     <div className="d-flex align-items-center">
-                      <img className="flex-shrink-0 img-fluid rounded" src={menuItem.image} alt={menuItem.name} style={{ width: '80px' }} />
+                      <img className="flex-shrink-0 img-fluid rounded" src={menuItem.image} alt={menuItem.name} style={{ width: '80px',height: '60px', boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.9)',filter: 'brightness(110%)'}} />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
                           <span>{menuItem.name}</span>

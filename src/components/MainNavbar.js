@@ -5,6 +5,18 @@ import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const MainNavbar = () => {
+  // import images
+function importAll(r) {
+  let images = {};
+  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
+
+// images
+const foodTruckIcon = images['food-truck.png'];
+
   const location = useLocation();
   const currentRoute = location.pathname;
   const routesToHeaders = {
@@ -31,7 +43,8 @@ const MainNavbar = () => {
       <Container fluid>
         <Navbar.Brand href="#home">
           <h1 className="text-warning m-0">
-            <i className="fa fa-utensils me-3"></i>Kuya Kevin's
+            <img src={foodTruckIcon} style={{height:'25%', width: '25%'}}></img>
+            <i className="me-3"></i>Kuya Kevin's
           </h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarCollapse">
@@ -45,7 +58,7 @@ const MainNavbar = () => {
             <NavLink to="/about" className="nav-item nav-link" activeClassName="active">About</NavLink>
             <NavLink to="/contact-us" className="nav-item nav-link" activeClassName="active">Contact Us</NavLink>
           </Nav>
-          <Button href="location.html" variant="primary" className="py-2 px-4">FIND US</Button>
+          <Button href="location.html" variant="warning" className="py-2 px-4">FIND US</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

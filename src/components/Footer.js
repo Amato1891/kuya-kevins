@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,9 +8,9 @@ const Footer = () => {
                 <div className="row g-5">
                     <div className="col-lg-3 col-md-6">
                         <h4 className="section-title ff-secondary text-start text-warning fw-normal mb-4">Company</h4>
-                        <a className="btn btn-link" href="">About Us</a>
-                        <a className="btn btn-link" href="">Contact Us</a>
-                        <a className="btn btn-link" href="">Reservation</a>
+                        <a className="btn btn-link" href="/about">About Us</a>
+                        <a className="btn btn-link" href="/contact-us">Contact Us</a>
+                        <a className="btn btn-link" href="/book-us">Book Us</a>
                         <a className="btn btn-link" href="">Privacy Policy</a>
                         <a className="btn btn-link" href="">Terms & Condition</a>
                     </div>
@@ -36,8 +37,8 @@ const Footer = () => {
                         <h4 className="section-title ff-secondary text-start text-warning fw-normal mb-4">Newsletter</h4>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div className="position-relative mx-auto" style={{ maxWidth: '400px' }}>
-                            <input className="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
-                            <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <input className="form-control border-warning w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
+                            <button type="button" className="btn btn-warning py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
                     </div>
                 </div>
@@ -46,7 +47,7 @@ const Footer = () => {
                 <div className="copyright">
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Kevins Food Truck Biz</a>, All Rights Reserved. 
+                            &copy; <a className="border-bottom" href="#">Kuya Kevins</a>, All Rights Reserved. 
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                             <div className="footer-menu">
@@ -59,7 +60,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+            <a href="#" className="btn btn-lg btn-warning btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
         </div>
         
     );

@@ -48,8 +48,8 @@ const BookUs = () => {
             <div className="row g-0">
                 <div className="col-12 bg-dark d-flex align-items-center">
                     <div className="col-12 p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 className="section-title ff-secondary text-start text-warning fw-normal">Book Us!</h5>
-                        <h1 className="text-white mb-4">We'd Love To Do The Cooking!</h1>
+                        <h5 className="section-title ff-secondary text-start text-warning fw-normal">Book Us for Your Next Event!</h5>
+                        <h1 className="text-white mb-4">Let Us Bring the Flavors to You!</h1>
                     </div>
                 </div>
                 <div className="form-container">
@@ -108,7 +108,7 @@ const BookUs = () => {
                                 </div>
                             </div>
                             <div className="col-12">
-                                <button id="submitBtn" className="btn btn-primary w-100 py-3" type="button" onClick={handleBookingFormSubmit}>Book Now</button>
+                                <button id="submitBtn" className="btn btn-warning w-100 py-3" type="button" onClick={handleBookingFormSubmit}>Book Now</button>
                             </div>
                         </div>
                     </form>
