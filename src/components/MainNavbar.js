@@ -41,13 +41,13 @@ const foodTruckIcon = images['food-truck.png'];
 <Container fluid className="position-relative p-0">
 <Navbar expand="lg" variant="dark" className="bg-dark px-0">
   <Container fluid>
-    <Navbar.Brand href="#home" className="d-flex align-items-center">
-      <img src={foodTruckIcon} style={{ height: '15%', width: '15%' }} alt="Food Truck Icon" className="me-3" />
+    <Navbar.Brand href="#home" className="d-flex align-items-center food-truck-icon">
+      <img src={foodTruckIcon} alt="Food Truck Icon" className="me-3" />
       <h1 className="text-warning m-0">Kuya Kevin's</h1>
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarCollapse">
+      <Navbar.Toggle aria-controls="navbarCollapse" className='hamburger-icon'>
       <span className="fa fa-bars"></span>
     </Navbar.Toggle>
+    </Navbar.Brand>
     <Navbar.Collapse id="navbarCollapse" className="justify-content-end">
       <Nav className="ms-auto py-0 pe-4">
         <NavLink exact to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
