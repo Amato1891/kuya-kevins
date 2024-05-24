@@ -4,6 +4,7 @@ import Carousel from './Carousel';
 import Menu from './Menu';
 import AboutSection from './About';
 import UpcomingLocations from './UpcomingLocations';
+import BookUs from './BookUs';
 
 // import images
 function importAll(r) {
@@ -108,8 +109,8 @@ const LandingPage = (props) => {
     <>
     <div className="container-xxl bg-white p-0">
 
-        <div className="container-xxl position-relative p-0">
-        <img className="img-fluid" src={kuyaKevinImg} alt=""/>
+        {/* <div className="container-xxl position-relative p-0"> */}
+        <img className="img-fluid" src={kuyaKevinImg} alt="Kuya Kevin" style={{width: 'auto', height: '90vh', zIndex: 1}}/>
         <AboutSection/>
             {/* <div className="container-xxl py-5 bg-dark hero-header mb-5"> */}
                 {/* <div className="container my-5 py-5">
@@ -569,8 +570,8 @@ const LandingPage = (props) => {
 
         <div className="col-md-6 bg-dark d-flex align-items-center">
             <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                <h5 className="section-title ff-secondary text-start text-warning fw-normal">Find Us!</h5>
-                <h1 className="text-white mb-4">Come Visit Us At These Locations!</h1>
+                {/* <h5 className="section-title ff-secondary text-start text-warning fw-normal">Find Us!</h5>
+                <h1 className="text-white mb-4">Come Visit Us At These Locations!</h1> */}
 
                 {/* <div id="upcomingLocations" className="text-white"> */}
                 
@@ -579,8 +580,8 @@ const LandingPage = (props) => {
                 <UpcomingLocations/>
                     </div>
                 </div>
- <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="row g-0">
+ {/* <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="row g-0"> */}
                 {/* <div className="col-md-6">
                     <div className="video">
                         <button type="button" className="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
@@ -588,7 +589,8 @@ const LandingPage = (props) => {
                         </button>
                     </div>
                 </div> */}
-                <div className="col-md-6 bg-dark d-flex align-items-center">
+                <BookUs/>
+                {/* <div className="col-md-6 bg-dark d-flex align-items-center">
                     <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 className="section-title ff-secondary text-start text-warning fw-normal">Reservation</h5>
                         <h1 className="text-white mb-4">Book A Table Online</h1>
@@ -634,9 +636,9 @@ const LandingPage = (props) => {
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> */}
+            {/* </div>
+        </div> */}
 
         {/* <div className="container-xxl pt-5 pb-3">
             <div className="container">
@@ -705,8 +707,8 @@ const LandingPage = (props) => {
             </div>
         </div> */}
 
-        <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="container">
+        {/* <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="container"> */}
                 <div className="text-center">
                     <h5 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h5>
                     <h1 className="mb-5">Our Clients Say!!!</h1>
@@ -758,8 +760,8 @@ const LandingPage = (props) => {
                         </div>
                     </div>
                 </div> */}
-            </div>
-        </div>
+            {/* </div>
+        </div> */}
 
         {/* <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">
@@ -825,7 +827,7 @@ const LandingPage = (props) => {
 
         <a href="#" className="btn btn-lg btn-primary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
         */}
-    </div>
+    {/* </div> */}
     </>
   )
 }

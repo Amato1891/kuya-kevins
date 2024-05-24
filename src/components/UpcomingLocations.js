@@ -58,7 +58,9 @@ function importAll(r) {
         fetchLocations();
     }, []);
 
-    return (
+    return (<>
+        <h5 className="section-title ff-secondary text-start text-warning fw-normal">Find Us!</h5>
+                <h1 className="text-white mb-4">Come Visit Us At These Locations!</h1>
         <div id="upcomingLocations">
             {locations.map((location, index) => (
                 <div className="location-card" key={index}>
@@ -69,6 +71,7 @@ function importAll(r) {
                 </div>
             ))}
         </div>
+        </>
     );
 }
 

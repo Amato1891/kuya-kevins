@@ -1,7 +1,22 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
+    const [scrollY, setScrollY] = useState(window.scrollY || window.pageYOffset);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY || window.pageYOffset);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on unmount
+    return () => {
+        
+      window.removeEventListener('scroll', handleScroll);
+    };
+    
+  }, []);
     return (
         <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">
@@ -60,7 +75,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <a href="#" className="btn btn-lg btn-warning btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+            {scrollY > 800 ? (<a href="#" className="btn btn-lg btn-warning btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>) :(<div></div>)}
+            
         </div>
         
     );

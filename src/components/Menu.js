@@ -26,43 +26,43 @@ function importAll(r) {
   const menuItems = [
     {
         name: "Meat Eggrolls",
-        price: "2-$6 / 4-$10",
+        price: "1-$3 / 2-$5",
         image: fourEggrollImg,
         description: "Crispy eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, green onions, and eggs, perfectly spiced with salt and pepper. Available in 2 or 4 counts."
     },
     {
         name: "Vegetable Eggrolls",
-        price: "2-$5 / 4-$9",
+        price: "1-$3 / 2-$5",
         image: fourEggrollImg,
         description: "Delicious vegetarian eggrolls filled with a mix of carrots, potatoes, cabbage, garlic, and onion, lightly seasoned with salt and pepper. Available in 2 or 4 counts."
     },
     {
         name: "Stir Fry Noodles",
-        price: "$9",
+        price: "$13",
         image: pancitImg2,
         description: "Flavorful stir fry noodles with garlic, onion, tender chicken, carrots, cabbage, green beans, and celery, tossed in chicken broth and soy sauce, seasoned with salt, pepper, and chicken granules."
     },
     {
         name: "Bourbon Chicken",
-        price: "$10",
+        price: "$13",
         image: bourbonChixImg,
         description: "Juicy chicken cooked in a savory bourbon sauce with soy sauce, garlic, ginger, green onions, water, brown sugar, and a touch of pepper flakes for heat, seasoned with salt, pepper, and chicken granules."
     },
     {
         name: "Wings",
-        price: "5-$10 / 10-$17",
+        price: "5-$10 / 10-$18",
         image: tenWingsImg,
         description: "Crispy wings marinated in soy sauce, water, and Mama Sita sour powder, coated with a blend of flour and corn starch, seasoned with salt and pepper for a perfect crunch. Available in 5 or 10 counts."
     },
     {
         name: "Pork BBQ",
-        price: "$12",
+        price: "$13",
         image: jasmineRiceImg,
         description: "Tender pork marinated in soy sauce and ketchup, sweetened with brown sugar and a hint of pineapple juice, skewered on BBQ sticks and grilled to perfection."
     },
     {
         name: "Adobo",
-        price: "$9",
+        price: "$13",
         image: adoboChixImg,
         description: "Classic adobo with chicken simmered in soy sauce, garlic, salt, pepper, and bay leaves, balanced with a touch of sugar and vinegar for a rich and savory flavor."
     },
@@ -75,7 +75,7 @@ function importAll(r) {
     {
       name: "Beverages",
       name: "Coke Products",
-        price: "$2.50",
+        price: "$3.00",
         image: cokeImg,
         description: "Proudly serving Coke products including Coca-Cola, Diet Coke, Coke Zero Sugar, Sprite, and more."
     }
