@@ -39,29 +39,27 @@ const foodTruckIcon = images['food-truck.png'];
 </Spinner> */}
 
 <Container fluid className="position-relative p-0">
-      <Navbar expand="lg" variant="dark" className="bg-dark px-0">
-      <Container fluid>
-        <Navbar.Brand href="#home">
-          <h1 className="text-warning m-0">
-            <img src={foodTruckIcon} style={{height:'25%', width: '25%'}}></img>
-            <i className="me-3"></i>Kuya Kevin's
-          </h1>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarCollapse">
-          <span className="fa fa-bars"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="navbarCollapse">
-          <Nav className="ms-auto py-0 pe-4">
-            <NavLink exact to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
-            <NavLink to="/book-us" className="nav-item nav-link" activeClassName="active">Book Us</NavLink>
-            <NavLink to="/menu" className="nav-item nav-link" activeClassName="active">Menu</NavLink>
-            <NavLink to="/about" className="nav-item nav-link" activeClassName="active">About</NavLink>
-            <NavLink to="/contact-us" className="nav-item nav-link" activeClassName="active">Contact Us</NavLink>
-          </Nav>
-          <Button href="location.html" variant="warning" className="py-2 px-4">FIND US</Button>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+<Navbar expand="lg" variant="dark" className="bg-dark px-0">
+  <Container fluid>
+    <Navbar.Brand href="#home" className="d-flex align-items-center">
+      <img src={foodTruckIcon} style={{ height: '15%', width: '15%' }} alt="Food Truck Icon" className="me-3" />
+      <h1 className="text-warning m-0">Kuya Kevin's</h1>
+    </Navbar.Brand>
+    <Navbar.Toggle aria-controls="navbarCollapse">
+      <span className="fa fa-bars"></span>
+    </Navbar.Toggle>
+    <Navbar.Collapse id="navbarCollapse" className="justify-content-end">
+      <Nav className="ms-auto py-0 pe-4">
+        <NavLink exact to="/" className="nav-item nav-link" activeClassName="active">Home</NavLink>
+        <NavLink to="/book-us" className="nav-item nav-link" activeClassName="active">Book Us</NavLink>
+        <NavLink to="/menu" className="nav-item nav-link" activeClassName="active">Menu</NavLink>
+        <NavLink to="/about" className="nav-item nav-link" activeClassName="active">About</NavLink>
+        <NavLink to="/contact-us" className="nav-item nav-link" activeClassName="active">Contact Us</NavLink>
+      </Nav>
+      <Button href="location.html" variant="warning" className="py-2 px-4">FIND US</Button>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
     </Container>
     </div>
     {/* if not on landing page, generate a small navheader for other pages */}
