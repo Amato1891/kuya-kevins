@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-const contentful = require('contentful');
 
 function UpcomingLocations() {
 
@@ -20,23 +19,14 @@ function importAll(r) {
     useEffect(() => {
         async function fetchLocations() {
             try {
-                // Initialize the Contentful client
-                const space = process.env.SPACE ? process.env.SPACE : null;
-                const accessToken = process.env.ACCESS_TOKEN ? process.env.ACCESS_TOKEN : null;
-                const client = contentful.createClient({
-                    space,
-                    environment: 'master',
-                    accessToken
-        });
-
-        // Retrieve entries from Contentful
-        const contentfulResponse = await client.getEntries();
-
-                if (contentfulResponse.items.length >= 1) {
+                const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuya-kevins-253fbee9ac9e.herokuapp.com/' : 'http://localhost:5000/';
+                const response = await fetch(`${baseUrl}api/locations`);
+                const data = await response.json();
+                if (data.items.length >= 1) {
                     // array of location objects
-                    const data = contentfulResponse.items;
-                    if (data.length >= 1) {
-                        setLocations(data.map(location => location.fields));
+                    const locationItems = data.items;
+                    if (locationItems.length >= 1) {
+                        setLocations(locationItems.map(location => location.fields));
                     } else {
                         // If locations array is empty, render placeholder info
                         setLocations([
