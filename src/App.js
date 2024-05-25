@@ -9,6 +9,7 @@ import BookUs from './components/BookUs';
 import Menu from './components/Menu';
 import AboutSection from './components/About';
 import ContactSection from './components/Contact';
+import FindUs from './components/FindUs';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<AboutSection />} />
           <Route path="/contact-us" element={<ContactSection />} />
+          <Route path="/find-us" element={<FindUs />} />
           <Route path="*" element={<LandingPage />} />
         </Routes>
         <Footer />

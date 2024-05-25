@@ -23,10 +23,10 @@ const usaPhilFlag = images['usa-phil-flag.jpg'];
           <img style={{width: 'auto', height: 'auto'}} className="img-fluid" data-wow-delay="0.1s" src= {aboutImg1} alt="About"/>
           </div>
           <div className="col-lg-6">
-            <h5 className="section-title ff-secondary text-start text-warning fw-normal">About Us</h5>
-            <h1 className="mb-4">Welcome to Kuya Kevin's</h1>
-            <p className="mb-4">your go-to destination for authentic Filipino cuisine. Indulge in a culinary journey that tantalizes your taste buds with vibrant flavors and traditional dishes.</p>
-            <p className="mb-4">Experience the warmth of Filipino hospitality as we serve up unforgettable meals that celebrate our rich culinary heritage.</p>
+          <h4 className="ff-secondary text-center text-warning fw-normal">About Us</h4>
+            <h5 className="mb-4" style={{textAlign: 'center'}}>Welcome to Kuya Kevin's</h5>
+            <p className="mb-4" style={{textAlign: 'center'}}>your go-to destination for authentic Filipino cuisine. Indulge in a culinary journey that tantalizes your taste buds with vibrant flavors and traditional dishes.</p>
+            <p className="mb-4" style={{textAlign: 'center'}}>Experience the warmth of Filipino hospitality as we serve up unforgettable meals that celebrate our rich culinary heritage.</p>
             <div className="row g-4 mb-4">
               <div className="col-sm-6">
                 <div className="d-flex align-items-center border-start border-5 border-primary px-3">

@@ -23,7 +23,8 @@ const foodTruckIcon = images['food-truck.png'];
     "/book-us": 'Book Us',
     "/menu": 'Menu',
     "/about": 'About',
-    "/contact-us": 'Contact Us'
+    "/contact-us": 'Contact Us',
+    "/find-us": 'Find Us'
   }
 
   const [expanded, setExpanded] = useState(false);
@@ -53,7 +54,7 @@ const foodTruckIcon = images['food-truck.png'];
         <NavLink to="/about" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>About</NavLink>
         <NavLink to="/contact-us" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>Contact Us</NavLink>
       </Nav>
-      <Button href="location.html" variant="warning" className="py-2 px-4">FIND US</Button>
+      <Button href="/find-us" variant="warning" className="py-2 px-4">FIND US</Button>
     </Navbar.Collapse>
   </Container>
 </Navbar>

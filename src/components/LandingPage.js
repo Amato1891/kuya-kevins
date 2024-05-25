@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet'
 import Carousel from './Carousel';
 import Menu from './Menu';
 import AboutSection from './About';
-import UpcomingLocations from './UpcomingLocations';
+import FindUs from './FindUs';
 import BookUs from './BookUs';
+import GoogleCalendarEmbed from './GoogleCalendarEmbed';
 
 // import images
 function importAll(r) {
@@ -567,9 +568,8 @@ const LandingPage = (props) => {
                 </div> */}
             </div>
         </div>
-
-        <div className="col-md-6 bg-dark d-flex align-items-center">
-            <div className="p-5 wow fadeInUp" data-wow-delay="0.2s">
+        {/* <div className="col-md-6 bg-dark d-flex align-items-center">
+            <div className="p-5 wow fadeInUp" data-wow-delay="0.2s"> */}
                 {/* <h5 className="section-title ff-secondary text-start text-warning fw-normal">Find Us!</h5>
                 <h1 className="text-white mb-4">Come Visit Us At These Locations!</h1> */}
 
@@ -577,9 +577,9 @@ const LandingPage = (props) => {
                 
  
                 {/* </div> */}
-                <UpcomingLocations/>
-                    </div>
-                </div>
+                <FindUs/>
+                    {/* </div>
+                </div> */}
  {/* <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
             <div className="row g-0"> */}
                 {/* <div className="col-md-6">

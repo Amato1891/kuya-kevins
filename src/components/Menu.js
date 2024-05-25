@@ -17,7 +17,7 @@ function importAll(r) {
   const bourbonChixImg = images['Bourbon_Chicken_with_Pancit.jpg'];
   const adoboChixImg = images['Chicken_Adobo_with_Rice.jpg'];
   const pancitImg1 = images['Pancit_2.jpg'];
-  const pancitImg2 = images['Pancit_3.jpg'];
+  const porkStick = images['porkstick.jpg'];
   const jasmineRiceImg = images['Jasmine_Rice.jpg'];
   const glutenFreeImg = images['gluten_free.jpg'];
   const cokeImg = images['coca_cola_logo.jpg'];
@@ -31,19 +31,7 @@ function importAll(r) {
         description: "Crispy eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, green onions, and eggs, perfectly spiced with salt and pepper. Available in 2 or 4 counts."
     },
     {
-        name: "Vegetable Eggrolls",
-        price: "1-$3 / 2-$5",
-        image: fourEggrollImg,
-        description: "Delicious vegetarian eggrolls filled with a mix of carrots, potatoes, cabbage, garlic, and onion, lightly seasoned with salt and pepper. Available in 2 or 4 counts."
-    },
-    {
-        name: "Stir Fry Noodles",
-        price: "$13",
-        image: pancitImg2,
-        description: "Flavorful stir fry noodles with garlic, onion, tender chicken, carrots, cabbage, green beans, and celery, tossed in chicken broth and soy sauce, seasoned with salt, pepper, and chicken granules."
-    },
-    {
-        name: "Bourbon Chicken",
+        name: "Bourbon Chicken w/rice",
         price: "$13",
         image: bourbonChixImg,
         description: "Juicy chicken cooked in a savory bourbon sauce with soy sauce, garlic, ginger, green onions, water, brown sugar, and a touch of pepper flakes for heat, seasoned with salt, pepper, and chicken granules."
@@ -57,21 +45,27 @@ function importAll(r) {
     {
         name: "Pork BBQ",
         price: "$13",
-        image: jasmineRiceImg,
+        image: porkStick,
         description: "Tender pork marinated in soy sauce and ketchup, sweetened with brown sugar and a hint of pineapple juice, skewered on BBQ sticks and grilled to perfection."
     },
     {
-        name: "Adobo",
+        name: "Chicken Adobo w/rice",
         price: "$13",
         image: adoboChixImg,
         description: "Classic adobo with chicken simmered in soy sauce, garlic, salt, pepper, and bay leaves, balanced with a touch of sugar and vinegar for a rich and savory flavor."
     },
     {
       name: "Pancit",
-      price: "$10",
+      price: "$10 | Add Chicken +$3",
       image: pancitImg1,
       description: "Traditional Filipino stir-fried noodles with garlic, onions, chicken, shrimp, carrots, cabbage, and green beans, all tossed in a savory soy sauce blend."
     },
+    {
+      name: "Jasmine Rice",
+      price: "$3",
+      image: jasmineRiceImg,
+      description: "Fragrant and silky, our Jasmine Rice elevates any dish with its delicate aroma and smooth texture. Sourced from Southeast Asia, it's the perfect accompaniment to your favorite meats and sauces."
+  },
     {
       name: "Beverages",
       name: "Coke Products",
@@ -85,7 +79,7 @@ function importAll(r) {
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 className="section-title ff-secondary text-center text-warning fw-normal">Food Menu</h5>
+          <h4 className="ff-secondary text-center text-warning fw-normal">Food Menu</h4>
           <h5 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h5>
           <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free"></img>
         </div>
@@ -99,7 +93,7 @@ function importAll(r) {
                       <img className="flex-shrink-0 img-fluid rounded" src={menuItem.image} alt={menuItem.name} style={{ width: '80px',height: '60px', boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.9)',filter: 'brightness(110%)'}} />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span>{menuItem.name}</span>
+                          <span style={{paddingRight: '3%'}}>{menuItem.name}</span>
                           <span className="text-warning">{menuItem.price}</span>
                         </h5>
                         <small className="fst-italic">{menuItem.description}</small>
