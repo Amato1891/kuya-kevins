@@ -15,7 +15,7 @@ const BookUs = () => {
         additionalInfo: ''
     });
 
-    const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuya-kevins-253fbee9ac9e.herokuapp.com/' : 'http://localhost:5000/';
+    const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/' : 'http://localhost:5000/';
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;

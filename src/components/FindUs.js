@@ -20,7 +20,7 @@ function importAll(r) {
     // useEffect(() => {
     //     async function fetchLocations() {
     //         try {
-    //             const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuya-kevins-253fbee9ac9e.herokuapp.com/' : 'http://localhost:5000/';
+    //             const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/' : 'http://localhost:5000/';
     //             const response = await fetch(`${baseUrl}api/locations`);
     //             const data = await response.json();
     //             if (data.items.length >= 1) {
@@ -63,7 +63,9 @@ function importAll(r) {
     <>
     <h4 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h4>
                 <h5 className="text-black mb-4" style={{textAlign: 'center'}}>Come Visit Us At These Locations!</h5>
+                <div className='calender-container'>
                 <GoogleCalendarEmbed/>
+                </div>
         {/* <div id="upcomingLocations">
             {locations.map((location, index) => (
                 <div className="location-card" key={index}>

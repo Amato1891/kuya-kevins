@@ -19,31 +19,31 @@ function Carousel() {
   const testimonials = [
     {
       id: 1,
-      text: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      name: 'Client Name 1',
-      profession: 'Profession 1',
+      text: "The food at Kuya Kevin's is absolutely delicious! Every dish is bursting with flavor and cooked to perfection. I highly recommend trying their Filipino BBQ skewers - they're simply mouthwatering.",
+      name: 'Maria Rodriguez',
+      profession: 'Food Blogger',
       imageSrc: testimonialImg1,
     },
     {
       id: 2,
-      text: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      name: 'Client Name 2',
-      profession: 'Profession 2',
-      imageSrc: testimonialImg2,
-    },
-    {
-      id: 3,
-      text: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      name: 'Client Name 3',
-      profession: 'Profession 3',
+      text: "I recently tried Kuya Kevin's food truck, and I was blown away by the authenticity and taste of their Filipino cuisine. The Pancit and Adobo were spot on, reminding me of home. Can't wait to visit again!",
+      name: 'Jose Garcia',
+      profession: 'Filipino Food Enthusiast',
       imageSrc: testimonialImg3,
     },
     {
-      id: 4,
-      text: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      name: 'Client Name 4',
-      profession: 'Profession 4',
+      id: 3,
+      text: "Kuya Kevin's food truck is a hidden gem! The food is fresh, flavorful, and affordable. The staff is friendly, and the service is quick. It's my go-to spot for a delicious and satisfying meal.",
+      name: 'Linda Nguyen',
+      profession: 'Local Resident',
       imageSrc: testimonialImg4,
+    },
+    {
+      id: 4,
+      text: "I had the pleasure of dining at Kuya Kevin's food truck, and I must say, it exceeded my expectations. The ambiance, the flavors, and the hospitality - everything was top-notch. I can't wait to come back for more!",
+      name: 'Michael Smith',
+      profession: 'Food Critic',
+      imageSrc: testimonialImg2,
     },
   ];
 

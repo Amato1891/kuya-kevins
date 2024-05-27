@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/</loc>
+    <loc>https://kuyakevinsbbq.com/</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Book Us Page -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/book-us</loc>
+    <loc>https://kuyakevinsbbq.com/book-us</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,7 +22,7 @@
 
   <!-- Menu Page -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/menu</loc>
+    <loc>https://kuyakevinsbbq.com/menu</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -30,7 +30,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/about</loc>
+    <loc>https://kuyakevinsbbq.com/about</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -38,7 +38,7 @@
 
   <!-- Contact Us Page -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/contact-us</loc>
+    <loc>https://kuyakevinsbbq.com/contact-us</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -46,7 +46,7 @@
 
   <!-- Find Us Page -->
   <url>
-    <loc>https://kuya-kevins-253fbee9ac9e.herokuapp.com/find-us</loc>
+    <loc>https://kuyakevinsbbq.com/find-us</loc>
     <lastmod>2024-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

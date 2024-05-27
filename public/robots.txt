@@ -20,4 +20,4 @@ Disallow: /search/
 Disallow: /sitemap.xml
 Disallow: /robots.txt
 
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://www.kuyakevinsbbq.com/sitemap.xml
