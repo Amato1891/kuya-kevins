@@ -69,7 +69,7 @@ function importAll(r) {
     {
       name: "Beverages",
       name: "Coke Products",
-        price: "$3.00",
+        price: "$3",
         image: cokeImg,
         description: "Proudly serving Coke products including Coca-Cola, Diet Coke, Coke Zero Sugar, Sprite, and more."
     }

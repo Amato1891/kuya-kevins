@@ -111,7 +111,7 @@ const LandingPage = (props) => {
     <div className="container-xxl bg-white p-0">
 
         {/* <div className="container-xxl position-relative p-0"> */}
-        <img className="img-fluid" src={kuyaKevinImg} alt="Kuya Kevin" style={{width: 'auto', height: '84vh', zIndex: 1}}/>
+        <img className="img-fluid" src={kuyaKevinImg} alt="Kuya Kevin" style={{width: 'auto', height: '80vh', zIndex: 1}}/>
         <AboutSection/>
             {/* <div className="container-xxl py-5 bg-dark hero-header mb-5"> */}
                 {/* <div className="container my-5 py-5">
