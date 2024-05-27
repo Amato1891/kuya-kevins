@@ -61,8 +61,8 @@ function importAll(r) {
 
     return (
     <>
-    <h4 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h4>
-                <h5 className="text-black mb-4" style={{textAlign: 'center'}}>Come Visit Us At These Locations!</h5>
+    <h1 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h1>
+                <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Come Visit Us At These Locations!</h3>
                 <div className='calender-container'>
                 <GoogleCalendarEmbed/>
                 </div>

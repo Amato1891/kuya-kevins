@@ -79,8 +79,8 @@ function importAll(r) {
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h4 className="ff-secondary text-center text-warning fw-normal">Food Menu</h4>
-          <h5 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h5>
+          <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1>
+          <h3 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h3>
           <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free"></img>
         </div>
         <div className="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">

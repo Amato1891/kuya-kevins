@@ -109,8 +109,8 @@ const BookUs = () => {
             {/* <div className="row g-0"> */}
                 {/* <div className="col-12 bg-dark d-flex align-items-center"> */}
                     {/* <div className="col-12 p-5 wow fadeInUp" data-wow-delay="0.2s"> */}
-                    <h4 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h4>
-                <h5 className="text-black mb-4" style={{textAlign: 'center'}}>Let Us Bring the Flavors to You!</h5>
+                    <h1 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h1>
+                <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Let Us Bring the Flavors to You!</h3>
                     {/* </div> */}
                 {/* </div> */}
                 <div className="form-container">

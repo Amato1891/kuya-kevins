@@ -710,8 +710,8 @@ const LandingPage = (props) => {
         {/* <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container"> */}
                 <div className="text-center">
-                    <h5 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h5>
-                    <h1 className="mb-5">See What Our Customers Are Saying!</h1>
+                    <h1 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h1>
+                    <h3 className="mb-5">See What Our Customers Are Saying!</h3>
                 </div>
                 <Carousel/>
                 {/* <div className="owl-carousel testimonial-carousel">

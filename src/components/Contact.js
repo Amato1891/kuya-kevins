@@ -5,8 +5,8 @@ const ContactSection = () => {
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h5 className="section-title ff-secondary text-center text-warning fw-normal">Contact Us</h5>
-          <h1 className="mb-5">Drop us a line.</h1>
+          <h1 className="section-title ff-secondary text-center text-warning fw-normal">Contact Us</h1>
+          <h3 className="mb-5">Drop us a line.</h3>
         </div>
         <div className="row g-4">
           <div className="col-12">
