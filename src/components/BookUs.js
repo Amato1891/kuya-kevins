@@ -15,7 +15,7 @@ const BookUs = () => {
         additionalInfo: ''
     });
 
-    const baseUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/' : 'http://localhost:5000/';
+    const baseUrl = process.env.NODE_ENV === 'production' ? '/.netlify/functions/' : 'http://localhost:5000/';
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
@@ -62,7 +62,6 @@ const BookUs = () => {
             // reset form validation error msg
             seterrorMsg('');
         try {
-            console.log(JSON.stringify(formData));
     const response = await fetch(`${baseUrl}submit-form`, {
         method: 'POST',
         headers: {
@@ -77,7 +76,6 @@ const BookUs = () => {
                 throw new Error('Failed to send message');
             }
             const message = `Thank you, ${formData.name}! Your booking request has been received. We're looking forward to seeing you soon!`;
-            console.log('cleanup actions')
             setEmailConfirmationMsgClass('confirmation-message');
             setConfirmationMessage(message);
             clearFormData();
