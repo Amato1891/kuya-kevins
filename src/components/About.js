@@ -30,7 +30,7 @@ const usaPhilFlag = images['usa-phil-flag.jpg'];
             <div className="row g-4 mb-4">
               <div className="col-sm-6">
                 <div className="d-flex align-items-center border-start border-5 border-primary px-3">
-                  <h1 className="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up"><b>15+</b></h1>
+                  <h1 className="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up"><b>10+</b></h1>
                   <div className="ps-4">
                     <p className="mb-0">Years of</p>
                     <h6 className="text-uppercase mb-0">Serving Excellence</h6>
