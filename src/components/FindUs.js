@@ -61,6 +61,11 @@ function importAll(r) {
 
     return (
     <>
+     {/* <div className="container-xxl bg-white py-5"> */}
+      <div className="container">
+        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+
+        
     <h1 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h1>
                 <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Come Visit Us At These Locations!</h3>
                 <div className='calender-container'>
@@ -76,6 +81,9 @@ function importAll(r) {
                 </div>
             ))}
         </div> */}
+        </div>
+        </div>
+        {/* </div> */}
         </>
     
     );

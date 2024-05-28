@@ -58,7 +58,7 @@ function importAll(r) {
       name: "Pancit",
       price: "$10 | Add Chicken +$3",
       image: pancitImg1,
-      description: "Traditional Filipino stir-fried noodles with garlic, onions, chicken, shrimp, carrots, cabbage, and green beans, all tossed in a savory soy sauce blend."
+      description: "Traditional Filipino stir-fried noodles with garlic, onions, carrots, cabbage, and green beans, all tossed in a savory soy sauce blend."
     },
     {
       name: "Jasmine Rice",
@@ -76,7 +76,7 @@ function importAll(r) {
 ];
 
   return (<>
-    <div className="container-xxl py-5">
+    {/* <div className="container-xxl bg-white py-5"> */}
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1>
@@ -106,7 +106,7 @@ function importAll(r) {
           </div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
     </>
   );
 };

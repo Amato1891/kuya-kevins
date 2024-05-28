@@ -109,6 +109,11 @@ const BookUs = () => {
             {/* <div className="row g-0"> */}
                 {/* <div className="col-12 bg-dark d-flex align-items-center"> */}
                     {/* <div className="col-12 p-5 wow fadeInUp" data-wow-delay="0.2s"> */}
+                    {/* <div className="container-xxl bg-white py-5"> */}
+      <div className="container">
+        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+
+        
                     <h1 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h1>
                 <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Let Us Bring the Flavors to You!</h3>
                     {/* </div> */}
@@ -179,6 +184,9 @@ const BookUs = () => {
                     </div>
                 </div>
             {/* </div> */}
+        {/* </div> */}
+        </div>
+        </div>
         {/* </div> */}
         </>
     );

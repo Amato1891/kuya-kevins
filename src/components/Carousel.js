@@ -47,7 +47,16 @@ function Carousel() {
     },
   ];
 
-  return (
+  return (<>
+  {/* <div className="container-xxl bg-white py-5"> */}
+      <div className="container">
+        <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <div className="text-center ">
+                    <h1 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h1>
+                    <h3 className="mb-5">See What Our Customers Are Saying!</h3>
+                </div>
+
+        
     <OwlCarousel className='owl-theme testimonial-carousel' loop margin={10} autoplay smartSpeed={1000} center dots responsive={{ 0: { items: 1 }, 768: { items: 2 }, 992: { items: 3 } }}>
       {testimonials.map((testimonial) => (
         <div key={testimonial.id} className='testimonial-item bg-transparent border rounded p-4'>
@@ -63,6 +72,10 @@ function Carousel() {
         </div>
       ))}
     </OwlCarousel>
+    </div>
+    </div>
+    {/* </div> */}
+    </>
   );
 };
 
