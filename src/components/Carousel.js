@@ -52,7 +52,7 @@ function Carousel() {
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
         <div className="text-center ">
-                    <h1 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h1>
+                    <h2 className="section-title ff-secondary text-center text-warning fw-normal">Reviews</h2>
                     <h3 className="mb-5">See What Our Customers Are Saying!</h3>
                 </div>
 

@@ -81,7 +81,7 @@ function importAll(r) {
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1>
           <h3 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h3>
-          <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free"></img>
+          <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free logo"></img>
         </div>
         <div className="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
           <div className="tab-content">

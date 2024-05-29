@@ -65,7 +65,7 @@ const foodTruckIcon = images['food-truck.png'];
         <div className="container-xxl position-relative p-0">
           <div className="container-xxl py-5 bg-dark hero-header mb-0">
             <div className="container text-center my-1 pt-1 pb-1">
-              <h1 className="display-3 text-white mb-0 animated slideInDown">{routesToHeaders[currentRoute]}</h1>
+              <h2 className="display-3 text-white mb-0 animated slideInDown">{routesToHeaders[currentRoute]}</h2>
             </div>
           </div>
         </div>
