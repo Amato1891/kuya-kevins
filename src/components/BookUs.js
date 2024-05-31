@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
 
 const BookUs = () => {
     const [confirmationMessage, setConfirmationMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
     const [errorMsg, seterrorMsg] = useState('');
     const [emailConfirmationMsgClass, setEmailConfirmationMsgClass] = useState('');
+    const [address, setAddress] = useState('');
+    const [suggestions, setSuggestions] = useState([]);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -12,10 +17,12 @@ const BookUs = () => {
         locationName: '',
         locationAddress: '',
         guests: '',
-        additionalInfo: ''
+        additionalInfo: '',
+        recaptchaResponse: ''
     });
 
     const baseUrl = process.env.NODE_ENV === 'production' ? '/.netlify/functions/' : 'http://localhost:5000/';
+    const SITE_KEY = '6LeCNO0pAAAAAMZnVymcb2fxA4Wt6tq_ZxZVtP3A';
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
@@ -24,6 +31,7 @@ const BookUs = () => {
 
     const handleBookingFormSubmit = async (e) => {
         e.preventDefault();
+
         if (!formData.name || formData.name.length < 2) {
             console.error('Invalid name');
             seterrorMsg('a name is required');
@@ -49,7 +57,7 @@ const BookUs = () => {
             seterrorMsg('a location name is required');
             return;
         }
-        if (!formData.locationAddress) {
+        if (!address || address.length < 10) {
             console.error('locationAddress is required');
             seterrorMsg('a location address is required');
             return;
@@ -61,14 +69,16 @@ const BookUs = () => {
         }
             // reset form validation error msg
             seterrorMsg('');
+            setIsLoading(true);
         try {
-    const response = await fetch(`${baseUrl}submit-form`, {
-        method: 'POST',
-        headers: {
+            formData.locationAddress = address;
+            const response = await fetch(`${baseUrl}submit-form`, {
+            method: 'POST',
+            headers: {
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    });
+            },
+            body: JSON.stringify(formData)
+        });
             if (!response.ok) {
                 const message = `Sorry, ${formData.name}! Your message failed to send, we working to fix the problem so please try again later!`;
                 setEmailConfirmationMsgClass('error-message');
@@ -82,6 +92,8 @@ const BookUs = () => {
             scrollToConfirmationMessage();
         } catch (error) {
             console.error('Error submitting form:', error);
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -96,6 +108,7 @@ const BookUs = () => {
             guests: '',
             additionalInfo: ''
         });
+        setAddress('');
     };
 
     const scrollToConfirmationMessage = () => {
@@ -103,21 +116,36 @@ const BookUs = () => {
         formContainer.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const handleAddressChange = async (e) => {
+        const input = e.target.value;
+        setAddress(input);
+        if (input.length > 2) {
+          try {
+            const response = await axios.get(`${baseUrl}api/places/autocomplete?input=${input}`);
+            setSuggestions(response.data.predictions);
+          } catch (error) {
+            console.error('Error fetching autocomplete data:', error);
+          }
+        } else {
+          setSuggestions([]);
+        }
+      };
+    
+      const handleSuggestionSelected = (e) => {
+        setAddress(e.target.innerHTML);
+        setSuggestions([]);
+      };
+
+      const handleRecaptchaChange = (response) => {
+        setFormData({ ...formData, recaptchaResponse: response });
+      };
+
     return (
         <>
-         {/* <div className="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s"> */}
-            {/* <div className="row g-0"> */}
-                {/* <div className="col-12 bg-dark d-flex align-items-center"> */}
-                    {/* <div className="col-12 p-5 wow fadeInUp" data-wow-delay="0.2s"> */}
-                    {/* <div className="container-xxl bg-white py-5"> */}
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-
-        
                     <h1 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h1>
                 <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Let Us Bring the Flavors to You!</h3>
-                    {/* </div> */}
-                {/* </div> */}
                 <div className="form-container">
                 {errorMsg ? (<span style={{ padding: '10px', backgroundColor: '#ffe6e6', color: 'red', borderRadius: '5px', fontStyle: 'italic' }}>{errorMsg}</span>) : (<span></span>)}
                     <form className="form-group" onSubmit={handleBookingFormSubmit}>
@@ -158,14 +186,21 @@ const BookUs = () => {
                             </div>
                             <div className="col-md-6">
                                 <div className="form-floating">
-                                    <input type="text" className="form-control" id="locationAddress" placeholder="Location Address" value={formData.locationAddress} onChange={handleInputChange} required/>
+                                    <input type="text" className="form-control" id="locationAddress" placeholder="Location Address" value={address} onChange={handleAddressChange} required/>
+                                    <div className="suggestion-box">
+                                        {suggestions && suggestions.map((suggestion) => (
+                                            <div key={suggestion.place_id} className="suggestion-item" onClick={handleSuggestionSelected}>
+                                            {suggestion.description}
+                                            </div>
+                                        ))}
+                                        </div>
                                     <label htmlFor="locationAddress">Location Address</label>
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div className="form-floating">
-                                    <input type="number" className="form-control" id="guests" placeholder="Estimated Total Number of Guests" value={formData.guests} onChange={handleInputChange} required/>
-                                    <label htmlFor="guests">Estimated Total Number of Guests</label>
+                                    <input type="number" className="form-control" id="guests" placeholder="Estimated Total Number of Guests" value={formData.guests} onChange={handleInputChange} min={5} max={300} required/>
+                                    <label htmlFor="guests">Est. Total Guests</label>
                                 </div>
                             </div>
                             <div className="col-12">
@@ -175,19 +210,26 @@ const BookUs = () => {
                                 </div>
                             </div>
                             <div className="col-12">
+                            <ReCAPTCHA
+                            sitekey={SITE_KEY}
+                            onChange={handleRecaptchaChange}
+                            />
                                 <button id="submitBtn" className="btn btn-warning w-100 py-3" type="submit">Book Now</button>
                             </div>
                         </div>
                     </form>
+                    {isLoading && (
+                        <div className="loading-animation">
+                        <div></div>
+                        <em className="loading-text">Sending Form</em>
+                        </div>
+                    )}
                     <div className="after-booking-form-submit" style={{ display: confirmationMessage ? 'block' : 'none' }}>
                         {confirmationMessage && <p className={emailConfirmationMsgClass}>{confirmationMessage}</p>}
                     </div>
                 </div>
-            {/* </div> */}
-        {/* </div> */}
         </div>
         </div>
-        {/* </div> */}
         </>
     );
 };

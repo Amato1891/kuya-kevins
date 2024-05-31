@@ -36,7 +36,7 @@ const Footer = () => {
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i>Kuyakevinsbbq@gmail.com</p>
                         <div className="d-flex pt-2">
                             <a className="btn btn-outline-light btn-social" href="https://x.com/" target='blank'><i className="fab fa-twitter"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/" target='blank'><i className="fab fa-facebook-f"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61560228483831" target='blank'><i className="fab fa-facebook-f"></i></a>
                             <a className="btn btn-outline-light btn-social" href="https://www.youtube.com/" target='blank'><i className="fab fa-youtube"></i></a>
                         </div>
                     </div>

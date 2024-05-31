@@ -19,7 +19,7 @@ function importAll(r) {
   const pancitImg1 = images['Pancit_2.jpg'];
   const porkStick = images['porkstick.jpg'];
   const jasmineRiceImg = images['Jasmine_Rice.jpg'];
-  const glutenFreeImg = images['gluten_free.jpg'];
+  const glutenFreeImg = images['gluten_free-removebg.png'];
   const cokeImg = images['coca_cola_logo.jpg'];
   
 
