@@ -121,7 +121,7 @@ const BookUs = () => {
         setAddress(input);
         if (input.length > 2) {
           try {
-            const response = await axios.get(`${baseUrl}api/places/autocomplete?input=${input}`);
+            const response = await axios.get(`${baseUrl}autocomplete?input=${input}`);
             setSuggestions(response.data.predictions);
           } catch (error) {
             console.error('Error fetching autocomplete data:', error);
