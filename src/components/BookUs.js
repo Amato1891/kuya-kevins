@@ -214,6 +214,8 @@ const BookUs = () => {
                             sitekey={SITE_KEY}
                             onChange={handleRecaptchaChange}
                             />
+                            </div>
+                            <div className="col-12">
                                 <button id="submitBtn" className="btn btn-warning w-100 py-3" type="submit">Book Now</button>
                             </div>
                         </div>
