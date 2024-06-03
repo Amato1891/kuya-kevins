@@ -18,47 +18,28 @@ const Footer = () => {
     
   }, []);
     return (
-        <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div className="container py-5">
-                <div className="row g-5">
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className="section-title ff-secondary text-start text-warning fw-normal mb-4">Kuya Kevin's</h4>
-                        <a className="btn btn-link" href="/about">About Us</a>
-                        <a className="btn btn-link" href="/contact-us">Contact Us</a>
-                        <a className="btn btn-link" href="/book-us">Book Us</a>
-                        {/* <a className="btn btn-link" href="">Privacy Policy</a> */}
-                        {/* <a className="btn btn-link" href="">Terms & Condition</a> */}
-                    </div>
-                    <div className="col-lg-3 col-md-6">
+        <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style={{textAlign: 'center'}}>
                         <h4 className="section-title ff-secondary text-start text-warning fw-normal mb-4">Contact</h4>
                         <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>Greater Tampa Bay Area</p>
-                        <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>727-479-2614</p>
-                        <p className="mb-2"><i className="fa fa-envelope me-3"></i>Kuyakevinsbbq@gmail.com</p>
-                        <div className="d-flex pt-2">
-                            <a className="btn btn-outline-light btn-social" href="https://x.com/" target='blank'><i className="fab fa-twitter"></i></a>
+                        <p className="mb-2"><i className="fa fa-phone-alt me-3"></i><a href="tel:727-479-2614" style={{color:'white'}}>727-479-2614</a></p>
+                        <p className="mb-2"><i className="fa fa-envelope me-3"></i><a href="mailto:Kuyakevinsbbq@gmail.com" style={{color:'white'}}>Kuyakevinsbbq@gmail.com</a></p>
+                        <div className="d-flex pt-2" style={{flexDirection: 'row', justifyContent: 'center'}}>
+                            <a className="btn btn-outline-light btn-social" href="https://x.com/KuyaKevinsBBQ" target='blank'><i className="fab fa-twitter"></i></a>
                             <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61560228483831" target='blank'><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.youtube.com/" target='blank'><i className="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
+                            <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/kuyakevinsbbq/" target='blank'><i className="fab fa-instagram"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.tiktok.com/@kuyakevinsbbq?lang=en" target='blank'><i className="fab fa-tiktok"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.snapchat.com/add/kuyakevinsbbq" target='blank'><i className="fab fa-snapchat"></i></a>
             </div>
-            <div className="container">
-                <div className="copyright">
+            <br/>
+            <hr/>
+                <br/>
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom" href="#">Kuya Kevins</a>, All Rights Reserved. 
+                            &copy; <a className="border-bottom link-white" href="#" style={{color:'white'}}>Kuya Kevins</a>, All Rights Reserved. 
                         </div>
                         <div className="col-md-6 text-center text-md-end">
-                            <div className="footer-menu">
-                                {/* <a href="">Home</a> */}
-                                {/* <a href="">Cookies</a> */}
-                                {/* <a href="">Help</a> */}
-                                {/* <a href="">FAQs</a> */}
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
             {scrollY > 800 ? (<a href="#" className="btn btn-lg btn-warning btn-lg-square back-to-top"><i className="fa fa-arrow-up"></i></a>) :(<div></div>)}
             
         </div>
