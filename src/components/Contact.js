@@ -14,11 +14,11 @@ const ContactSection = () => {
             <div className="row gy-4">
               <div className="col-md-4">
                 <h5 className="section-title ff-secondary fw-normal text-start text-warning">By Email</h5>
-                <p><i className="fa fa-envelope-open text-warning me-2"></i>Kuyakevinsbbq@gmail.com</p>
+                <p><i className="fa fa-envelope-open text-warning me-2"></i><a href="mailto:Kuyakevinsbbq@gmail.com" style={{color:'black'}}>Kuyakevinsbbq@gmail.com</a></p>
               </div>
               <div className="col-md-4">
                 <h5 className="section-title ff-secondary fw-normal text-start text-warning">By Phone</h5>
-                <p><i className="fa fa-phone text-warning me-2"></i>727-479-2614</p>
+                <p><i className="fa fa-phone text-warning me-2"></i><a href="tel:727-479-2614" style={{color:'black'}}>727-479-2614</a></p>
               </div>
               {/* <div className="col-md-4">
                 <h5 className="section-title ff-secondary fw-normal text-start text-warning">Technical</h5>
@@ -33,41 +33,6 @@ const ContactSection = () => {
         tabIndex="0"></iframe>
 
           </div>
-          {/* <div className="col-md-6">
-            <div className="wow fadeInUp" data-wow-delay="0.2s">
-              <form>
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input type="text" className="form-control" id="name" placeholder="Your Name" />
-                      <label htmlFor="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-floating">
-                      <input type="email" className="form-control" id="email" placeholder="Your Email" />
-                      <label htmlFor="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="form-floating">
-                      <input type="text" className="form-control" id="subject" placeholder="Subject" />
-                      <label htmlFor="subject">Subject</label>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="form-floating">
-                      <textarea className="form-control" placeholder="Leave a message here" id="message" style={{ height: '150px' }}></textarea>
-                      <label htmlFor="message">Message</label>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <button className="btn btn-warning w-100 py-3" type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

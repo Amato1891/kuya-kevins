@@ -35,7 +35,7 @@ const Footer = () => {
                 <br/>
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom link-white" href="#" style={{color:'white'}}>Kuya Kevins</a>, All Rights Reserved. 
+                            &copy; <a className="border-bottom link-white" style={{color:'white'}}>Kuya Kevins</a>, All Rights Reserved. 
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                         </div>
