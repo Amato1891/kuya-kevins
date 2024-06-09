@@ -38,7 +38,7 @@ function importAll(r) {
     },
     {
         name: "Wings",
-        price: "5-$10 / 10-$18",
+        price: "5-$12 / 10-$20",
         image: tenWingsImg,
         description: "Crispy wings marinated in soy sauce, water, and Mama Sita sour powder, coated with a blend of flour and corn starch, seasoned with salt and pepper for a perfect crunch. Available in 5 or 10 counts."
     },
