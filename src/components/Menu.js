@@ -25,22 +25,22 @@ function importAll(r) {
 
   const menuItems = [
     {
-        name: "Meat Eggrolls",
+        name: "Lumpia Eggrolls",
         price: "1-$3 / 2-$5",
         image: fourEggrollImg,
-        description: "Crispy eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, green onions, and eggs, perfectly spiced with salt and pepper. Available in 2 or 4 counts."
+        description: "Eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, and green onions fried to crispy perfection. The kind where you keep eating even though you're full!"
     },
     {
         name: "Bourbon Chicken w/rice",
         price: "$13",
         image: bourbonChixImg,
-        description: "Juicy chicken cooked in a savory bourbon sauce with soy sauce, garlic, ginger, green onions, water, brown sugar, and a touch of pepper flakes for heat, seasoned with salt, pepper, and chicken granules."
+        description: "(GF) The fan favorite! Garlic, ginger, and green onions fusedwith bourbon marinated chicken grilled to perfection over an open flame, served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
     },
     {
-        name: "Wings",
+        name: "Marinated Fried Wings",
         price: "5-$12 / 10-$20",
         image: tenWingsImg,
-        description: "Crispy wings marinated in soy sauce, water, and Mama Sita sour powder, coated with a blend of flour and corn starch, seasoned with salt and pepper for a perfect crunch. Available in 5 or 10 counts."
+        description: "Kuya Kevin's favorite! Jumbo wings marinated in sinigang juices then fried to a crunchy finish. No sauce needed for this one. Caution, very addicting!"
     },
     {
         name: "Pork BBQ",
@@ -52,31 +52,31 @@ function importAll(r) {
         name: "Chicken Adobo w/rice",
         price: "$13",
         image: adoboChixImg,
-        description: "Classic adobo with chicken simmered in soy sauce, garlic, salt, pepper, and bay leaves, balanced with a touch of sugar and vinegar for a rich and savory flavor."
+        description: "A favorite in the Philippines. Soy sauce and vinegar marinated chicken stewed with garlic, bay leaves, black peppercorn, and brown sugar. Served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
     },
     {
       name: "Pancit",
-      price: "$10 | Add Chicken +$3",
+      price: "$10",
       image: pancitImg1,
-      description: "Traditional Filipino stir-fried noodles with garlic, onions, carrots, cabbage, and green beans, all tossed in a savory soy sauce blend."
+      description: "A lighter choice. Filipino rice noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery. Add sautéed chicken for an additional $3"
     },
     {
       name: "Jasmine Rice",
-      price: "$3",
+      price: "$2",
       image: jasmineRiceImg,
-      description: "Fragrant and silky, our Jasmine Rice elevates any dish with its delicate aroma and smooth texture. Sourced from Southeast Asia, it's the perfect accompaniment to your favorite meats and sauces."
+      description: "Freshly steamed white jasmine rice."
   },
     {
       name: "Beverages",
-      name: "Coke Products",
+      name: "Coke Products & Iced Tea",
         price: "$3",
         image: cokeImg,
-        description: "Proudly serving Coke products including Coca-Cola, Diet Coke, Coke Zero Sugar, Sprite, and more."
+        description: "Proudly serving Coke products including Coca-Cola, Diet Coke, and Sprite. Bottled Water available for $2"
     }
 ];
 
   return (<>
-    {/* <div className="container-xxl bg-white py-5"> */}
+    <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1>
@@ -106,7 +106,7 @@ function importAll(r) {
           </div>
         </div>
       </div>
-    {/* </div> */}
+    </div>
     </>
   );
 };

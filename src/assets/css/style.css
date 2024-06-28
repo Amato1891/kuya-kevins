@@ -614,3 +614,63 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+.card-container {
+perspective: 1000px;
+}
+
+.landing-page-logo {
+transition: transform 0.6s;
+transform-style: preserve-3d;
+}
+
+.landing-page-logo.flipped {
+transform: rotateY(360deg);
+}
+
+.card-container {
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-side {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.card-side.front {
+  transform: rotateY(0deg);
+}
+
+.card-side.back {
+  transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-side.front {
+  transform: rotateY(-180deg);
+}
+
+.card-container.flipped .card-side.back {
+  transform: rotateY(0deg);
+}
+.icon {
+    transition: opacity 1s ease-in-out; /* Duration of the fade-in effect */
+    opacity: 1;
+  }
+  
+  .icon.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
