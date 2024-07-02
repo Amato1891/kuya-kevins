@@ -48,12 +48,11 @@ const LandingPage = (props) => {
 
     return (
         <>
-            <img className="img-fluid" src={kuyaKevinImg} alt="Kuya Kevins main logo" style={{
+            <img className="img-fluid main-logo" src={kuyaKevinImg} alt="Kuya Kevins main logo" style={{
               display: 'block',
               marginTop: '0 auto',
               maxWidth: '700px',
-              width: '100%',
-              height: '70vh', 
+              width: '100%', 
               zIndex: 1
             }}/>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
