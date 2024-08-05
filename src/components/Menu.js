@@ -12,7 +12,6 @@ function importAll(r) {
   
   // images
   const fourEggrollImg = images['4_Count_Eggroll.jpg'];
-  const fiveWingsImg = images['5_Count_Marinated_Wings_2.jpg'];
   const tenWingsImg = images['10_Count_Marinated_Wings_2.jpg'];
   const bourbonChixImg = images['Bourbon_Chicken_with_Pancit.jpg'];
   const adoboChixImg = images['Chicken_Adobo_with_Rice.jpg'];

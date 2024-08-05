@@ -22,8 +22,6 @@ function importAll(r) {
   const kuyaCardFront = images['KuyaCard.png'];
   const kuyaCardBack = images['KuyaCard2.png'];
 
-  
-
 
 const LandingPage = (props) => {
 
@@ -53,7 +51,7 @@ const LandingPage = (props) => {
               marginTop: '0 auto',
               maxWidth: '700px',
               width: '100%', 
-              zIndex: 1
+              zIndex: 1,
             }}/>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img style={{ width: 'auto', height: 'auto' }} className="img-fluid landing-page-logo" data-wow-delay="0.1s" src={aboutImg1} alt="Kuya Kevins alt logo" />

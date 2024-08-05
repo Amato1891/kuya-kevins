@@ -11,20 +11,28 @@ function importAll(r) {
 const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
 
 // images
-const aboutImg1 = images['kuya-kevins-thumb-removebg-preview.png'];
+const kuyaKevinImg2 = images['kuyaKevinsAbout.jpg'];
+const kuyaKevinImg4 = images['kuyaKevinsAbout4.jpg'];
 const usaPhilFlag = images['usa-phil-flag.jpg'];
 
 return (<>
-  <div className="container-xxl py-5" style={{ position: 'relative', textAlign: 'center'}}>
+  <div className="container-xxl py-5" style={{ position: 'relative', textAlign: 'center', zIndex:9}}>
     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundImage: `url(${usaPhilFlag})`, opacity: 0.1 }}></div>
     <div className="container">
       <div className="row g-4 align-items-center">
       <h1 className="ff-secondary text-warning fw-normal">About Us</h1>
 <h2 className="mb-4">Welcome to Kuya Kevin's BBQ</h2>
 <p className="mb-4">Discover the essence of Filipino fusion cuisine at Kuya Kevin's BBQ. We are your ultimate destination for authentic Filipino flavors, offering a culinary journey that delights your taste buds with vibrant and traditional dishes like Pancit and Adobo. Our commitment to quality and authenticity ensures an unforgettable dining experience.</p>
+<div className="mb-4" style={{zIndex:50}}>
+  <a href={kuyaKevinImg4} target="_blank" rel="noopener noreferrer">
+    <img className="about-images" src={kuyaKevinImg4} alt="Kuya Kevins thumbs up"/>
+  </a>
+  <a href={kuyaKevinImg2} target="_blank" rel="noopener noreferrer">
+    <img className="about-images" src={kuyaKevinImg2} alt="Kuya Kevin and mom"/>
+  </a>
+</div>
 <h2 className="mb-4">Our Filipino Heritage</h2>
 <p className="mb-4">Experience the warmth of Filipino hospitality in every bite. Our food truck brings the rich culinary heritage of the Philippines to your community, serving up savory BBQ, grilled specialties, and a variety of marinated meats. Join us and indulge in the best of Filipino street food, crafted with love and tradition.</p>
-
           <div className="row g-4 mb-4">
             <div className="col-sm-6">
               <div className="d-flex align-items-center border-start border-5 border-primary px-3">
