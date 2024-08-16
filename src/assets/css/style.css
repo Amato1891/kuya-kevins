@@ -166,10 +166,6 @@ body {
         background: transparent !important;
     }
 
-    .main-logo {
-
-    }
-    
     .sticky-top.navbar-dark {
         position: fixed;
         background: var(--dark) !important;

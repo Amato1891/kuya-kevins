@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
 
 const MainNavbar = () => {
+  const [isFullScreenNav, setFullScreenNav] = useState(false);
   // import images
 function importAll(r) {
   let images = {};
@@ -32,16 +32,40 @@ const foodTruckIcon = images['food-truck.png'];
   const handleNavLinkClick = () => {
     setExpanded(false); // Close the navbar when a link is clicked
   };
+  
+  useEffect(() => {
+    // Function to check page width and update state
+    const logPageWidth = () => {
+      const pageWidth = window.innerWidth;
+
+      // Only update state if the condition changes
+      if (pageWidth >= 992 && !isFullScreenNav) {
+        setFullScreenNav(true);
+      } else if (pageWidth < 992 && isFullScreenNav) {
+        setFullScreenNav(false);
+      }
+    };
+
+    // Initial check
+    logPageWidth();
+
+    // Listen for resize events
+    window.addEventListener('resize', logPageWidth);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', logPageWidth);
+  }, [isFullScreenNav]); // Dependency array to watch for changes
 
   return (<>
     <div className="bg-white p-0">
 
 <Container fluid className="position-relative p-0">
 <Navbar expand="lg" variant="dark" className="bg-dark px-0" expanded={expanded}>
-  <Container fluid>
+<Container fluid style={{backgroundColor: isFullScreenNav ? '#212529':'transparent'}}>
     <Navbar.Brand href="#home" className="d-flex align-items-center food-truck-icon">
       <img src={foodTruckIcon} alt="Food Truck Icon" className="me-3" />
-      <h1 className="text-warning m-0">Kuya Kevin's</h1>
+      {isFullScreenNav ? (<div></div>) : (<h1 className="text-warning m-0">Kuya Kevin's</h1>)}
+      {/* <h1 className="text-warning m-0">Kuya Kevin's</h1> */}
       <Navbar.Toggle aria-controls="navbarCollapse" className='hamburger-icon' onClick={() => setExpanded(!expanded)}>
       <span className="fa fa-bars"></span>
     </Navbar.Toggle>
@@ -60,6 +84,8 @@ const foodTruckIcon = images['food-truck.png'];
 </Navbar>
     </Container>
     </div>
+    {/* if full screen, push the header down so navbar is clean */}
+    {isFullScreenNav ? (<div style={{width: '100%', height: '100px'}}></div>) : (<div></div>)}
     {/* if not on landing page, generate a small navheader for other pages */}
     {currentRoute !== '/' && (
         <div className="container-xxl position-relative p-0">
