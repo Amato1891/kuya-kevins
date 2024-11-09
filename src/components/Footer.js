@@ -17,6 +17,14 @@ const Footer = () => {
     };
     
   }, []);
+
+  const captureSocialMediaEvent = (socialMediaSite) => {
+    console.log(`Sending social_media_link_clicked event to GA with user click of ${socialMediaSite}`);
+    // capture event if card is clicked
+    gtag('event', 'social_media_link', {
+      social_media_link_clicked: socialMediaSite
+    });
+  }
     return (
         <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style={{textAlign: 'center'}}>
                         <h4 className="section-title ff-secondary text-start text-warning fw-normal mb-4">Contact</h4>
@@ -24,11 +32,11 @@ const Footer = () => {
                         <p className="mb-2"><i className="fa fa-phone-alt me-3"></i><a href="tel:727-479-2614" style={{color:'white'}}>727-479-2614</a></p>
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i><a href="mailto:Kuyakevinsbbq@gmail.com" style={{color:'white'}}>Kuyakevinsbbq@gmail.com</a></p>
                         <div className="d-flex pt-2" style={{flexDirection: 'row', justifyContent: 'center'}}>
-                            <a className="btn btn-outline-light btn-social" href="https://x.com/KuyaKevinsBBQ" target='blank'><i className="fab fa-twitter"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61560228483831" target='blank'><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/kuyakevinsbbq/" target='blank'><i className="fab fa-instagram"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.tiktok.com/@kuyakevinsbbq?lang=en" target='blank'><i className="fab fa-tiktok"></i></a>
-                            <a className="btn btn-outline-light btn-social" href="https://www.snapchat.com/add/kuyakevinsbbq" target='blank'><i className="fab fa-snapchat"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://x.com/KuyaKevinsBBQ" target='blank' onClick = {()=> {captureSocialMediaEvent('x')}}><i className="fab fa-twitter"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61560228483831" target='blank' onClick = {()=> {captureSocialMediaEvent('facebook')}}><i className="fab fa-facebook-f"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/kuyakevinsbbq/" target='blank' onClick = {()=> {captureSocialMediaEvent('instagram')}}><i className="fab fa-instagram"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.tiktok.com/@kuyakevinsbbq?lang=en" target='blank' onClick = {()=> {captureSocialMediaEvent('tiktok')}}><i className="fab fa-tiktok"></i></a>
+                            <a className="btn btn-outline-light btn-social" href="https://www.snapchat.com/add/kuyakevinsbbq" target='blank' onClick = {()=> {captureSocialMediaEvent('snapchat')}}><i className="fab fa-snapchat"></i></a>
             </div>
             <br/>
             <hr/>

@@ -44,6 +44,10 @@ const LandingPage = (props) => {
 
   const handleImageClick = () => {
     setIsFlipped(!isFlipped);
+    // capture event if card is clicked
+    gtag('event', 'kuya_kevin_business_card', {
+      business_card_clicked: true
+    });
   };
 
     return (
