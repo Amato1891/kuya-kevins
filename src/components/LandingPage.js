@@ -5,6 +5,7 @@ import Menu from './Menu';
 import AboutSection from './About';
 import FindUs from './FindUs';
 import BookUs from './BookUs';
+import PromoBanner from './PromoBanner';
 import GoogleCalendarEmbed from './GoogleCalendarEmbed';
 
 // import images
@@ -21,6 +22,7 @@ function importAll(r) {
   const aboutImg1 = images['kuya-kevins-thumb-removebg-preview.png'];
   const kuyaCardFront = images['KuyaCard.png'];
   const kuyaCardBack = images['KuyaCard2.png'];
+  const ltoItem = images['porkstick.jpg'];
 
 
 const LandingPage = (props) => {
@@ -56,6 +58,10 @@ const LandingPage = (props) => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img style={{ width: 'auto', height: 'auto' }} className="img-fluid landing-page-logo" data-wow-delay="0.1s" src={aboutImg1} alt="Kuya Kevins alt logo" />
 </div>
+            <PromoBanner
+            productName = 'Filipino Pork Stick'
+            productImage = {ltoItem}
+            />
             <AboutSection/>
             <Menu/>
             <FindUs/>   

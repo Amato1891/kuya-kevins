@@ -17,6 +17,8 @@ function importAll(r) {
   const adoboChixImg = images['Chicken_Adobo_with_Rice.jpg'];
   const pancitImg1 = images['Pancit_2.jpg'];
   const porkStick = images['porkstick.jpg'];
+  const poutine = images['poutine.jpeg'];
+  const sisig = images['sisig.jpg'];
   const jasmineRiceImg = images['Jasmine_Rice.jpg'];
   const glutenFreeImg = images['gluten_free-removebg.png'];
   const cokeImg = images['coca_cola_logo.jpg'];
@@ -25,13 +27,13 @@ function importAll(r) {
   const menuItems = [
     {
         name: "Lumpia Eggrolls",
-        price: "1-$3 / 2-$5",
+        price: "1-$4 / 2-$6",
         image: fourEggrollImg,
         description: "Eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, and green onions fried to crispy perfection. The kind where you keep eating even though you're full!"
     },
     {
         name: "Bourbon Chicken w/rice",
-        price: "$13",
+        price: "$14",
         image: bourbonChixImg,
         description: "(GF) The fan favorite! Garlic, ginger, and green onions fusedwith bourbon marinated chicken grilled to perfection over an open flame, served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
     },
@@ -43,13 +45,13 @@ function importAll(r) {
     },
     {
         name: "Pork BBQ",
-        price: "$13",
+        price: "$6",
         image: porkStick,
-        description: "Tender pork marinated in soy sauce and ketchup, sweetened with brown sugar and a hint of pineapple juice, skewered on BBQ sticks and grilled to perfection."
+        description: "Marinated pork, sliced and grilled to perfection, skewered with an onion and pepper medley."
     },
     {
         name: "Chicken Adobo w/rice",
-        price: "$13",
+        price: "$14",
         image: adoboChixImg,
         description: "A favorite in the Philippines. Soy sauce and vinegar marinated chicken stewed with garlic, bay leaves, black peppercorn, and brown sugar. Served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
     },
@@ -57,7 +59,19 @@ function importAll(r) {
       name: "Pancit",
       price: "$10",
       image: pancitImg1,
-      description: "A lighter choice. Filipino rice noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery. Add sautéed chicken for an additional $3"
+      description: "A lighter choice. Filipino rice noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery. Add sautéed chicken for an additional $4"
+    },
+    {
+      name: "Filipino Poutine",
+      price: "$14",
+      image: poutine,
+      description: "A twist on a Canadian classic. Hot and fresh steak fries topped with lumpia eggroll meat, shredded cheese, and homemade adobo gravy."
+    },
+    {
+      name: "Pork Sisig",
+      price: "$14",
+      image: sisig,
+      description: "Smoked and deep fried pork belly, chopped and sautéed with onions and calamansi juice. Served over a bed of silky white rice."
     },
     {
       name: "Jasmine Rice",
