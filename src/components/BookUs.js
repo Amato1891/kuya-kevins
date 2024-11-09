@@ -90,7 +90,16 @@ const BookUs = () => {
             setConfirmationMessage(message);
             clearFormData();
             scrollToConfirmationMessage();
+            gtag('event', 'booking_form_submit', {
+                time_submitted: new Date().toISOString(),
+                success: true
+              });
         } catch (error) {
+            gtag('event', 'booking_form_submit', {
+                time_submitted: new Date().toISOString(),
+                success: false,
+                error_on_submit: JSON.stringify(error)
+              });
             console.error('Error submitting form:', error);
         } finally {
             setIsLoading(false);

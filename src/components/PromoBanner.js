@@ -16,10 +16,10 @@ function PromoBanner({ productName, productImage }) {
 
   const handleReaction = (emoji) => {
     setReaction(emoji);
-    console.log(`User reacted with: ${emoji}`);
+    // console.log(`User reacted with: ${emoji}`);
     setLocalStorage();
     // Track the reaction event in Google Analytics
-    console.log('Sending product_reaction event to GA');
+    // console.log('Sending product_reaction event to GA');
     gtag('event', 'product_reaction', {
         product_name: productName,
         reaction: emoji,

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate  } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [isFullScreenNav, setFullScreenNav] = useState(false);
+  const navigate = useNavigate();
   // import images
 function importAll(r) {
   let images = {};
@@ -29,8 +30,20 @@ const foodTruckIcon = images['food-truck.png'];
 
   const [expanded, setExpanded] = useState(false);
 
-  const handleNavLinkClick = () => {
-    setExpanded(false); // Close the navbar when a link is clicked
+  const handleNavLinkClick = (location) => {
+
+    // handle navigation and hiding navbar
+    if (location === 'FIND US') {
+      navigate('/find-us');
+    } else {
+      setExpanded(false); // Close the navbar when a link is clicked
+    }
+
+    // console.log(`Sending navbar_click event to GA with user click of ${location}`);
+    // send tab click to google analytics
+    gtag('event', 'navbar_click', {
+        navbar_tab_clicked: location
+      });
   };
   
   useEffect(() => {
@@ -72,13 +85,13 @@ const foodTruckIcon = images['food-truck.png'];
     </Navbar.Brand>
     <Navbar.Collapse id="navbarCollapse" className="justify-content-end">
       <Nav className="ms-auto py-0 pe-4">
-        <NavLink to="/" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>Home</NavLink>
-        <NavLink to="/book-us" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>Book Us</NavLink>
-        <NavLink to="/menu" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>Menu</NavLink>
-        <NavLink to="/about" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>About</NavLink>
-        <NavLink to="/contact-us" className="nav-item nav-link" activeclassname="active" onClick={handleNavLinkClick}>Contact Us</NavLink>
+        <NavLink to="/" className="nav-item nav-link" activeclassname="active" onClick={() => handleNavLinkClick('Home')}>Home</NavLink>
+        <NavLink to="/book-us" className="nav-item nav-link" activeclassname="active" onClick={() => handleNavLinkClick('Book Us')}>Book Us</NavLink>
+        <NavLink to="/menu" className="nav-item nav-link" activeclassname="active" onClick={() => handleNavLinkClick('Menu')}>Menu</NavLink>
+        <NavLink to="/about" className="nav-item nav-link" activeclassname="active" onClick={() => handleNavLinkClick('About')}>About</NavLink>
+        <NavLink to="/contact-us" className="nav-item nav-link" activeclassname="active" onClick={() => handleNavLinkClick('Contact Us')}>Contact Us</NavLink>
       </Nav>
-      <Button href="/find-us" variant="warning" className="py-2 px-4">FIND US</Button>
+      <Button variant="warning" className="py-2 px-4" onClick={() => handleNavLinkClick('FIND US')}>FIND US</Button>
     </Navbar.Collapse>
   </Container>
 </Navbar>
