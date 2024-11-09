@@ -39,7 +39,6 @@ const foodTruckIcon = images['food-truck.png'];
       setExpanded(false); // Close the navbar when a link is clicked
     }
 
-    // console.log(`Sending navbar_click event to GA with user click of ${location}`);
     // send tab click to google analytics
     gtag('event', 'navbar_click', {
         navbar_tab_clicked: location

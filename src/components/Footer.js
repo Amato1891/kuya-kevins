@@ -19,7 +19,6 @@ const Footer = () => {
   }, []);
 
   const captureSocialMediaEvent = (socialMediaSite) => {
-    console.log(`Sending social_media_link_clicked event to GA with user click of ${socialMediaSite}`);
     // capture event if card is clicked
     gtag('event', 'social_media_link', {
       social_media_link_clicked: socialMediaSite
