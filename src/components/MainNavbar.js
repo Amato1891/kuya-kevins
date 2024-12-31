@@ -5,18 +5,11 @@ import { useLocation } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [isFullScreenNav, setFullScreenNav] = useState(false);
+  const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
   const navigate = useNavigate();
-  // import images
-function importAll(r) {
-  let images = {};
-  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-
-const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
 
 // images
-const foodTruckIcon = images['food-truck.png'];
+const foodTruckIcon = `${imgUrl}food-truck.png`;
 
   const location = useLocation();
   const currentRoute = location.pathname;
@@ -35,6 +28,7 @@ const foodTruckIcon = images['food-truck.png'];
     // handle navigation and hiding navbar
     if (location === 'FIND US') {
       navigate('/find-us');
+      setExpanded(false); // Close the navbar when a link is clicked
     } else {
       setExpanded(false); // Close the navbar when a link is clicked
     }

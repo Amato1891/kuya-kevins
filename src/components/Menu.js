@@ -1,28 +1,21 @@
 import React from 'react';
 
 const Menu = () => {
-    // import images
-function importAll(r) {
-    let images = {};
-    r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
-    return images;
-  }
-  
-  const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
+
+const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
   
   // images
-  const fourEggrollImg = images['4_Count_Eggroll.jpg'];
-  const tenWingsImg = images['10_Count_Marinated_Wings_2.jpg'];
-  const bourbonChixImg = images['Bourbon_Chicken_with_Pancit.jpg'];
-  const adoboChixImg = images['Chicken_Adobo_with_Rice.jpg'];
-  const pancitImg1 = images['Pancit_2.jpg'];
-  const porkStick = images['porkstick.jpg'];
-  const poutine = images['poutine.jpeg'];
-  const sisig = images['sisig.jpg'];
-  const jasmineRiceImg = images['Jasmine_Rice.jpg'];
-  const glutenFreeImg = images['gluten_free-removebg.png'];
-  const cokeImg = images['coca_cola_logo.jpg'];
-  
+  const fourEggrollImg = `${imgUrl}4_Count_Eggroll.jpg`;
+  const tenWingsImg = `${imgUrl}10_Count_Marinated_Wings_2.jpg`;
+  const bourbonChixImg = `${imgUrl}Bourbon_Chicken_with_Pancit.jpg`;
+  const adoboChixImg = `${imgUrl}Chicken_Adobo_with_Rice.jpg`;
+  const pancitImg1 = `${imgUrl}Pancit_2.jpg`;
+  const porkStick = `${imgUrl}porkstick.jpg`;
+  const poutine = `${imgUrl}poutine.jpeg`;
+  const sisig = `${imgUrl}sisig.jpg`;
+  const jasmineRiceImg = `${imgUrl}Jasmine_Rice.jpg`;
+  const glutenFreeImg = `${imgUrl}gluten_free-removebg.png`;
+  const cokeImg = `${imgUrl}coca_cola_logo.jpg`;
 
   const menuItems = [
     {

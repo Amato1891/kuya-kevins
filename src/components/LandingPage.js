@@ -8,21 +8,15 @@ import BookUs from './BookUs';
 import PromoBanner from './PromoBanner';
 import GoogleCalendarEmbed from './GoogleCalendarEmbed';
 
-// import images
-function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-  }
-  
-  const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
+const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
+
   
   // images
-  const kuyaKevinImg = images['kuya_kevin_color_bg.png'];
-  const aboutImg1 = images['kuya-kevins-thumb-removebg-preview.png'];
-  const kuyaCardFront = images['KuyaCard.png'];
-  const kuyaCardBack = images['KuyaCard2.png'];
-  const ltoItem = images['porkstick.jpg'];
+  const kuyaKevinImg = `${imgUrl}kuya_kevin_color_bg.png`;
+  const aboutImg1 = `${imgUrl}kuya-kevins-thumb-removebg-preview.png`;
+  const kuyaCardFront = `${imgUrl}KuyaCard.png`;
+  const kuyaCardBack = `${imgUrl}KuyaCard2.png`;
+  const ltoItem = `${imgUrl}porkstick.jpg`;
 
 
 const LandingPage = (props) => {
@@ -62,11 +56,12 @@ const LandingPage = (props) => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img style={{ width: 'auto', height: 'auto' }} className="img-fluid landing-page-logo" data-wow-delay="0.1s" src={aboutImg1} alt="Kuya Kevins alt logo" />
 </div>
-            <PromoBanner
+            {/* <PromoBanner
             productName = 'Filipino Pork Stick'
             productImage = {ltoItem}
-            />
+            /> */}
             <AboutSection/>
+            <Carousel/>
             <Menu/>
             <FindUs/>   
             <BookUs/>

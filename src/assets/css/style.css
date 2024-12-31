@@ -12,6 +12,34 @@ body {
     font-family: "Roboto", sans-serif;
   }
 
+//* Ensure the container div (image-item) fills the space */
+.image-item {
+    display: flex;              /* Flexbox container to allow flexibility */
+    justify-content: center;    /* Horizontally center the image */
+    align-items: center;        /* Vertically center the image */
+    overflow: hidden;           /* Hide overflow if the image exceeds the div */
+    height: 100%;               /* Make the div take full height */
+  }
+  
+  /* Make the image take up full space within its container */
+  .full-height-image {
+    object-fit: cover;   /* Make the image cover the div while maintaining its aspect ratio */
+    width: 100%;          /* Fill the width of the container */
+    height: 100%;         /* Fill the height of the container */
+  }
+  
+  /* Ensure that OwlCarousel handles responsive sizing correctly */
+  .owl-theme .image-item {
+    height: 100%;  /* Allow the image item to take up the full height of the carousel */
+  }
+  
+  /* Optional: make sure images don't distort when in smaller viewports */
+  @media (max-width: 768px) {
+    .image-item {
+      height: 300px; /* Set a fixed height for mobile if necessary */
+    }
+  }
+
   body::before {
     content: "";
     position: absolute;

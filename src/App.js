@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-
 import LandingPage from './components/LandingPage';
 import Footer from './components/Footer';
 import MainNavbar from './components/MainNavbar';
@@ -11,9 +10,10 @@ import AboutSection from './components/About';
 import ContactSection from './components/Contact';
 import FindUs from './components/FindUs';
 
+
+
 const App = () => {
   return (
-    <>
       <BrowserRouter>
         <MainNavbar />
         <Routes>
@@ -27,7 +27,6 @@ const App = () => {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
   );
 };
 
