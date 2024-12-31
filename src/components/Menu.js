@@ -38,7 +38,7 @@ const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.co
     },
     {
         name: "Pork BBQ",
-        price: "$6",
+        price: "$8",
         image: porkStick,
         description: "Marinated pork, sliced and grilled to perfection, skewered with an onion and pepper medley."
     },
