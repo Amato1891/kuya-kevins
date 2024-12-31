@@ -23,6 +23,7 @@ return (<>
 <p className="mb-4">Discover the essence of Filipino fusion cuisine at Kuya Kevin's BBQ. We are your ultimate destination for authentic Filipino flavors, offering a culinary journey that delights your taste buds with vibrant and traditional dishes like Pancit and Adobo. Our commitment to quality and authenticity ensures an unforgettable dining experience.</p>
 <h2 className="mb-4">Our Filipino Heritage</h2>
 <p className="mb-4">Experience the warmth of Filipino hospitality in every bite. Our food truck brings the rich culinary heritage of the Philippines to your community, serving up savory BBQ, grilled specialties, and a variety of marinated meats. Join us and indulge in the best of Filipino street food, crafted with love and tradition.</p>
+
           <div className="row g-4 mb-4">
             <div className="col-sm-6">
               <div className="d-flex align-items-center border-start border-5 border-primary px-3">

@@ -5,6 +5,7 @@ import Menu from './Menu';
 import AboutSection from './About';
 import FindUs from './FindUs';
 import BookUs from './BookUs';
+import IframeEmbed from './IframeEmbed';
 import PromoBanner from './PromoBanner';
 import GoogleCalendarEmbed from './GoogleCalendarEmbed';
 
@@ -60,12 +61,14 @@ const LandingPage = (props) => {
             productName = 'Filipino Pork Stick'
             productImage = {ltoItem}
             /> */}
+            {/* import components */}
             <AboutSection/>
             <Carousel/>
             <Menu/>
             <FindUs/>   
             <BookUs/>
-            {/* <Carousel/> */}
+            
+            {/* Loyalty card */}
             <div className="card-container" onClick={handleImageClick}>
             {isVisible && (
         <i
@@ -83,6 +86,8 @@ const LandingPage = (props) => {
         alt="Kuya Kevin's business card"
       />
     </div>
+    {/* CL iFrame embed */}
+    <IframeEmbed/>
         </>
       )
 }
