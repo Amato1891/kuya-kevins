@@ -46,7 +46,7 @@ const LandingPage = (props) => {
   };
 
     return (
-        <>
+      <>
             <img className="img-fluid main-logo" src={kuyaKevinImg} alt="Kuya Kevins main logo" style={{
               display: 'block',
               marginTop: '0 auto',
@@ -80,7 +80,7 @@ const LandingPage = (props) => {
             
       <img
         onClick={handleIconClick}
-        style={{ width: 'auto', height: 'auto', marginTop: '15px', marginBottom: '15px', padding: '10px' }}
+        style={{ width: 'auto', height: 'auto', marginTop: '15px', marginBottom: '15px', padding: '25px' }}
         className={`img-fluid landing-page-logo ${isFlipped ? 'flipped' : ''}`}
         src={isFlipped ? kuyaCardBack : kuyaCardFront}
         alt="Kuya Kevin's business card"
@@ -88,6 +88,12 @@ const LandingPage = (props) => {
     </div>
     {/* CL iFrame embed */}
     <IframeEmbed/>
+    {/* Add helmet after all other components have loaded in */}
+    <Helmet>
+        <title>Kuya Kevin's BBQ | Authentic Filipino Fusion Cuisine</title>
+        <meta name="description" content="Discover Kuya Kevin's BBQ, offering authentic Filipino fusion cuisine. Enjoy dishes like Pancit, Adobo, and more, made with love and tradition. Visit us today!" />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/" />
+      </Helmet>
         </>
       )
 }

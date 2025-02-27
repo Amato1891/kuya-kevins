@@ -1,8 +1,25 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { NavLink, useNavigate  } from 'react-router-dom';
 
 const Footer = () => {
     const [scrollY, setScrollY] = useState(window.scrollY || window.pageYOffset);
+    const navigate = useNavigate();
+
+    const handleNavLinkClick = (location) => {
+
+      navigate(location);
+
+      // scroll to top after clicking privacy page
+     (() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top with smooth animation
+      })();
+
+      // send tab click to google analytics
+      gtag('event', 'navbar_click', {
+          navbar_tab_clicked: location
+        });
+    };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +59,8 @@ const Footer = () => {
                 <br/>
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a className="border-bottom link-white" style={{color:'white'}}>Kuya Kevins</a>, All Rights Reserved. 
+                             <p>&copy; Kuya Kevins, All Rights Reserved.</p>
+                          <NavLink to="/privacy" className="" activeclassname="active" onClick={() => handleNavLinkClick('privacy')}>Privacy Policy</NavLink>
                         </div>
                         <div className="col-md-6 text-center text-md-end">
                         </div>

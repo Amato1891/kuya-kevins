@@ -1,19 +1,18 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const AboutSection = () => {
-  // import images
-// function importAll(r) {
-//   let images = {};
-//   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-//   return images;
-// }
 
-// const images = importAll(require.context('../assets/img/', false, /\.(png|jpe?g|svg)$/));
 const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
 // images
 const usaPhilFlag = `${imgUrl}usa-phil-flag.jpg`;
 
 return (<>
+<Helmet>
+        <title>About Us - Kuya Kevin's BBQ</title>
+        <meta name="description" content="Learn more about Kuya Kevin's BBQ, our story, and our mission to bring authentic Filipino fusion cuisine to the community." />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/about-us" />
+      </Helmet>
   <div className="container-xxl py-5" style={{ position: 'relative', textAlign: 'center', zIndex:9}}>
     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundImage: `url(${usaPhilFlag})`, opacity: 0.1 }}></div>
     <div className="container">

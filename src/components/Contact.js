@@ -1,12 +1,18 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const ContactSection = () => {
   return (
     <>
+    <Helmet>
+        <title>Contact Us - Kuya Kevin's BBQ</title>
+        <meta name="description" content="Get in touch with Kuya Kevin's BBQ for inquiries, catering, or general questions. We'd love to hear from you!" />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/contact-us" />
+      </Helmet>
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h2 className="section-title ff-secondary text-center text-warning fw-normal">Contact Us</h2>
+          <h1 className="section-title ff-secondary text-center text-warning fw-normal">Contact Us</h1>
           <h3 className="mb-5">Drop us a line.</h3>
         </div>
         <div className="row g-4">
@@ -20,10 +26,6 @@ const ContactSection = () => {
                 <h5 className="section-title ff-secondary fw-normal text-start text-warning">By Phone</h5>
                 <p><i className="fa fa-phone text-warning me-2"></i><a href="tel:727-479-2614" style={{color:'black'}}>727-479-2614</a></p>
               </div>
-              {/* <div className="col-md-4">
-                <h5 className="section-title ff-secondary fw-normal text-start text-warning">Technical</h5>
-                <p><i className="fa fa-envelope-open text-warning me-2"></i>tech@example.com</p>
-              </div> */}
             </div>
           </div>
           <div className="col-md-6 wow fadeIn" data-wow-delay="0.1s">

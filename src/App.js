@@ -9,6 +9,7 @@ import Menu from './components/Menu';
 import AboutSection from './components/About';
 import ContactSection from './components/Contact';
 import FindUs from './components/FindUs';
+import Privacy from './components/Privacy';
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/about" element={<AboutSection />} />
           <Route path="/contact-us" element={<ContactSection />} />
           <Route path="/find-us" element={<FindUs />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<LandingPage />} />
         </Routes>
         <Footer />

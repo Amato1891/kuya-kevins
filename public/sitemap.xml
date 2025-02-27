@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://kuyakevinsbbq.com/</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Book Us Page -->
   <url>
     <loc>https://kuyakevinsbbq.com/book-us</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -23,7 +23,7 @@
   <!-- Menu Page -->
   <url>
     <loc>https://kuyakevinsbbq.com/menu</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,7 +31,7 @@
   <!-- About Page -->
   <url>
     <loc>https://kuyakevinsbbq.com/about</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -39,7 +39,7 @@
   <!-- Contact Us Page -->
   <url>
     <loc>https://kuyakevinsbbq.com/contact-us</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -47,9 +47,17 @@
   <!-- Find Us Page -->
   <url>
     <loc>https://kuyakevinsbbq.com/find-us</loc>
-    <lastmod>2024-11-08</lastmod>
+    <lastmod>2025-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://kuyakevinsbbq.com/privacy</loc>
+    <lastmod>2025-02-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

@@ -4,40 +4,40 @@ function PromoBanner({ productName, productImage }) {
   const [showBanner, setShowBanner] = useState(false);
   const [reaction, setReaction] = useState(null);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-    // get timestamp from local storage and check if its older than 1 month. If it is, then show the survey again.
-    const oldTimeStamp = JSON.parse (localStorage.getItem("kuyaKevins"))?.surveyCompletedDate;
-    const timeStampOlderThanOneMonth = isTimestampOlderThanOneMonth (oldTimeStamp)
-      setShowBanner(timeStampOlderThanOneMonth);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //   // get timestamp from local storage and check if its older than 1 month. If it is, then show the survey again.
+  //   const oldTimeStamp = JSON.parse (localStorage.getItem("kuyaKevins"))?.surveyCompletedDate;
+  //   const timeStampOlderThanOneMonth = isTimestampOlderThanOneMonth (oldTimeStamp)
+  //     setShowBanner(timeStampOlderThanOneMonth);
+  //   }, 3000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  const handleReaction = (emoji) => {
-    setReaction(emoji);
-    setLocalStorage();
-    // Track the reaction event in Google Analytics
-    gtag('event', 'product_reaction', {
-        product_name: productName,
-        reaction: emoji,
-      });
+  // const handleReaction = (emoji) => {
+  //   setReaction(emoji);
+  //   setLocalStorage();
+  //   // Track the reaction event in Google Analytics
+  //   gtag('event', 'product_reaction', {
+  //       product_name: productName,
+  //       reaction: emoji,
+  //     });
   
-    setShowBanner(false);
-  };
+  //   setShowBanner(false);
+  // };
 
   const handleClose = () => {
     setShowBanner(false);
   };
 
-  const setLocalStorage = () => {
-    const timestamp = new Date().toISOString();
-    const storageData = JSON.stringify ({
-        "surveyCompletedDate": timestamp
-    })
-    // set local storage
-    localStorage.setItem("kuyaKevins", storageData);
-  }
+  // const setLocalStorage = () => {
+  //   const timestamp = new Date().toISOString();
+  //   const storageData = JSON.stringify ({
+  //       "surveyCompletedDate": timestamp
+  //   })
+  //   // set local storage
+  //   localStorage.setItem("kuyaKevins", storageData);
+  // }
 
   const isTimestampOlderThanOneMonth = (storedTimestamp) => {
     if (!storedTimestamp) return true; // If no timestamp, treat as older

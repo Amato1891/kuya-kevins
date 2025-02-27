@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import GoogleCalendarEmbed from './GoogleCalendarEmbed';
+import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 
 function FindUs() {
 
@@ -16,6 +18,10 @@ function importAll(r) {
   const checkBackSoon = images['check_back_soon.png'];
 
     const [locations, setLocations] = useState([]);
+
+    // get current path 
+      const location = useLocation();
+      const currentRoute = location.pathname;
 
     // useEffect(() => {
     //     async function fetchLocations() {
@@ -61,12 +67,16 @@ function importAll(r) {
 
     return (
     <>
+    <Helmet>
+        <title>Find Us - Kuya Kevin's BBQ</title>
+        <meta name="description" content="Find Kuya Kevin's BBQ food truck at various locations and events. Get our schedule and location information here." />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/find-us" />
+      </Helmet>
      {/* <div className="container-xxl bg-white py-5"> */}
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
 
-        
-    <h1 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h1>
+    {currentRoute === '/find-us' ? <h1 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h1> : <h2 className="ff-secondary text-center text-warning fw-normal" style={{paddingTop: '10%'}}>Find Us!</h2>}
                 <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Come Visit Us At These Locations!</h3>
                 <div className='calender-container'>
                 <GoogleCalendarEmbed/>

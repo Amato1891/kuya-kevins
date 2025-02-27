@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 
 const Menu = () => {
 
@@ -81,11 +83,20 @@ const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.co
     }
 ];
 
+  // get current path 
+  const location = useLocation();
+  const currentRoute = location.pathname;
+
   return (<>
+  <Helmet>
+        <title>Menu - Kuya Kevin's BBQ</title>
+        <meta name="description" content="Explore the delicious menu of Kuya Kevin's BBQ, featuring authentic Filipino fusion dishes like Pancit and Adobo." />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/menu" />
+      </Helmet>
     <div className="container-xxl py-5">
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1>
+          {currentRoute === '/menu' ? <h1 className="ff-secondary text-center text-warning fw-normal">Food Menu</h1> : <h2 className="ff-secondary text-center text-warning fw-normal">Food Menu</h2>}
           <h3 className="mb-5">Proudly Serving A 100% Gluten Free Menu</h3>
           <img style={{ maxWidth: '30%', height: 'auto', paddingBottom: '10%' }} src={glutenFreeImg} alt="Gluten Free logo"></img>
         </div>

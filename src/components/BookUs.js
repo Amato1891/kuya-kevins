@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
+import { useLocation } from 'react-router-dom';
 
 const BookUs = () => {
     const [confirmationMessage, setConfirmationMessage] = useState('');
@@ -149,11 +151,21 @@ const BookUs = () => {
         setFormData({ ...formData, recaptchaResponse: response });
       };
 
+      // get current path 
+        const location = useLocation();
+        const currentRoute = location.pathname;
+
     return (
         <>
+        <Helmet>
+        <title>Book Us - Kuya Kevin's BBQ</title>
+        <meta name="description" content="Book Kuya Kevin's BBQ food truck for your next event or party. Experience authentic Filipino fusion cuisine with our delicious menu." />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/book-us" />
+      </Helmet>
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h1>
+                    
+                    {currentRoute === '/book-us' ? <h1 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h1> : <h2 className="ff-secondary text-center text-warning" style={{paddingTop: '15%'}}>Book Us for Your Next Event!</h2>}
                 <h3 className="text-black mb-4" style={{textAlign: 'center'}}>Let Us Bring the Flavors to You!</h3>
                 <div className="form-container">
                 {errorMsg ? (<span style={{ padding: '10px', backgroundColor: '#ffe6e6', color: 'red', borderRadius: '5px', fontStyle: 'italic' }}>{errorMsg}</span>) : (<span></span>)}
