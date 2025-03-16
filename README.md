@@ -1,12 +1,12 @@
-Kuya Kevin's Food Truck Website
+# Kuya Kevin's Food Truck Website
 Welcome to the official repository for Kuya Kevin's Food Truck website! This project serves as the online presence for the local food truck, bringing delicious food and great service to your neighborhood. Here, you can learn more about the food truck, explore the menu, and even contact us to place an order or inquire about availability.
 
-🚀 Features
+## 🚀 Features
 Netlify Hosting: This website is hosted on Netlify, providing fast, secure, and reliable access for visitors.
 Express.js Server: An Express.js server is used for backend functionality to handle:
 Google reCAPTCHA: Protects the site from spam and malicious activities by ensuring only real users can submit forms.
 Form Submission Emailer: Facilitates easy and direct communication with the food truck, sending email notifications upon form submissions (like inquiries or orders).
-📦 Tech Stack
+## 📦 Tech Stack
 Frontend:
 HTML, CSS, JavaScript
 Responsive design for mobile and desktop
