@@ -1,8 +1,5 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amato1891/kuya-kevins/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/issues)
-[![Forks](https://img.shields.io/github/forks/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/network)
 [![Stars](https://img.shields.io/github/stars/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/stargazers)
-[![Version](https://img.shields.io/npm/v/kuya-kevins)](https://npmjs.com/package/kuya-kevins)
 [![Last commit](https://img.shields.io/github/last-commit/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/commits/main)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fkuyakevinsbbq.com)](https://kuyakevinsbbq.com)
 [![Language](https://img.shields.io/github/languages/top/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins)
