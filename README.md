@@ -1,4 +1,16 @@
 # Kuya Kevin's Food Truck Website
+
+## 📑 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Live Website](#-live-website)
+- [Setup](#-setup)
+- [Form Submission & Emailer](#-form-submission--emailer)
+- [Deployment](#-deployment)
+- [Contact](#-contact)
+- [License](#-license)
+- [Issues](#-issues)
+  
 Welcome to the official repository for Kuya Kevin's Food Truck website! This project serves as the online presence for the local food truck, bringing delicious food and great service to your neighborhood. Here, you can learn more about the food truck, explore the menu, and even contact us to place an order or inquire about availability.
 
 ## 🚀 Features
