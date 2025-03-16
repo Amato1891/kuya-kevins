@@ -16,7 +16,7 @@ Google reCAPTCHA for spam protection
 Nodemailer for handling form submissions and email notifications
 ##🌐 Live Website
 You can check out the live version of the website at:
-<a href="https://kuyakevinsbbq.com/">kuyakevinsbbq.com</a>
+<a target="blank" href="https://kuyakevinsbbq.com/">kuyakevinsbbq.com</a>
 ## 🛠️ Setup
 To run this project locally, follow these steps:
 
