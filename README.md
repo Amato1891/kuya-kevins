@@ -1,3 +1,13 @@
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Amato1891/kuya-kevins/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/issues)
+[![Forks](https://img.shields.io/github/forks/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/network)
+[![Stars](https://img.shields.io/github/stars/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/stargazers)
+[![Version](https://img.shields.io/npm/v/kuya-kevins)](https://npmjs.com/package/kuya-kevins)
+[![Last commit](https://img.shields.io/github/last-commit/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/commits/main)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fkuyakevinsbbq.com)](https://kuyakevinsbbq.com)
+[![Language](https://img.shields.io/github/languages/top/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins)
+[![Build Status](https://img.shields.io/github/workflow/status/Amato1891/kuya-kevins/CI)](https://github.com/Amato1891/kuya-kevins/actions)
+
 # Kuya Kevin's Food Truck Website
 
 ## 📑 Table of Contents
@@ -8,7 +18,6 @@
 - [Form Submission & Emailer](#-form-submission--emailer)
 - [Deployment](#-deployment)
 - [Contact](#-contact)
-- [License](#-license)
 - [Issues](#-issues)
   
 Welcome to the official repository for Kuya Kevin's Food Truck website! This project serves as the online presence for the local food truck, bringing delicious food and great service to your neighborhood. Here, you can learn more about the food truck, explore the menu, and even contact us to place an order or inquire about availability.
@@ -60,7 +69,5 @@ The form submission feature on the site uses Nodemailer to send notifications wh
 The website is deployed to Netlify, providing continuous deployment with every push to the main branch. Whenever changes are made, Netlify automatically rebuilds and redeploys the site.
 ## 📧 Contact
 For inquiries or questions about the food truck or menu, feel free to contact us through the form on the website or reach us directly via email.
-## 📜 License
-MIT
 ## 🐞 Issues
 If you find any bugs or issues with the website, please feel free to open an issue here on GitHub. We'll get back to you as soon as possible!
