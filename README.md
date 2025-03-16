@@ -3,7 +3,6 @@
 [![Last commit](https://img.shields.io/github/last-commit/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins/commits/main)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fkuyakevinsbbq.com)](https://kuyakevinsbbq.com)
 [![Language](https://img.shields.io/github/languages/top/Amato1891/kuya-kevins)](https://github.com/Amato1891/kuya-kevins)
-[![Build Status](https://img.shields.io/github/workflow/status/Amato1891/kuya-kevins/CI)](https://github.com/Amato1891/kuya-kevins/actions)
 # Kuya Kevin's Food Truck Website
 
 ## 📑 Table of Contents
