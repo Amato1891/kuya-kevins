@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 const Menu = () => {
 
-const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
+const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.243:3000/images/';
   
   // images
   const fourEggrollImg = `${imgUrl}4_Count_Eggroll.jpg`;
@@ -18,19 +18,20 @@ const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.co
   const jasmineRiceImg = `${imgUrl}Jasmine_Rice.jpg`;
   const glutenFreeImg = `${imgUrl}gluten_free-removebg.png`;
   const cokeImg = `${imgUrl}coca_cola_logo.jpg`;
+  const birriaTacosImg = `${imgUrl}birra_tacos.jpg`;
 
   const menuItems = [
     {
         name: "Lumpia Eggrolls",
         price: "1-$4 / 2-$6",
         image: fourEggrollImg,
-        description: "Eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, and green onions fried to crispy perfection. The kind where you keep eating even though you're full!"
+        description: "Eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, and green onions fried to crispy perfection."
     },
     {
-        name: "Bourbon Chicken w/rice",
+        name: "Bourbon Chicken",
         price: "$14",
         image: bourbonChixImg,
-        description: "(GF) The fan favorite! Garlic, ginger, and green onions fusedwith bourbon marinated chicken grilled to perfection over an open flame, served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
+        description: "The fan favorite! Bourbon marinated chicken grilled to perfection over an open flame, served with white jasmine rice. *Upgrade pancit noodles for an additional $2"
     },
     {
         name: "Marinated Fried Wings",
@@ -39,34 +40,40 @@ const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.co
         description: "Kuya Kevin's favorite! Jumbo wings marinated in sinigang juices then fried to a crunchy finish. No sauce needed for this one. Caution, very addicting!"
     },
     {
-        name: "Pork BBQ",
+        name: "Pork BBQ On A Stick",
         price: "$8",
         image: porkStick,
-        description: "Marinated pork, sliced and grilled to perfection, skewered with an onion and pepper medley."
+        description: "Marinated pork sliced and grilled to perfection skewered with an onion and pepper medley."
     },
     {
-        name: "Chicken Adobo w/rice",
+        name: "Chicken Adobo",
         price: "$14",
         image: adoboChixImg,
-        description: "A favorite in the Philippines. Soy sauce and vinegar marinated chicken stewed with garlic, bay leaves, black peppercorn, and brown sugar. Served over a bed of fresh white jasmine rice. Upgrade from rice to pancit noodles for an additional $2"
+        description: "Soy sauce and vinegar marinated chicken slow cooked and shredded. Served over a bed of fresh white jasmine rice. *Upgrade pancit noodles for an additional $2"
     },
     {
-      name: "Pancit",
-      price: "$10",
+      name: "Chicken Pancit",
+      price: "$14",
       image: pancitImg1,
-      description: "A lighter choice. Filipino rice noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery. Add sautéed chicken for an additional $4"
+      description: "Bihon and Vermicelli noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery."
     },
     {
       name: "Filipino Poutine",
       price: "$14",
       image: poutine,
-      description: "A twist on a Canadian classic. Hot and fresh steak fries topped with lumpia eggroll meat, shredded cheese, and homemade adobo gravy."
+      description: "A twist on a Canadian classic! Hot and fresh steak fries topped with lumpia eggroll meat, shredded cheese, and homemade adobo gravy."
     },
     {
       name: "Pork Sisig",
       price: "$14",
       image: sisig,
       description: "Smoked and deep fried pork belly, chopped and sautéed with onions and calamansi juice. Served over a bed of silky white rice."
+    },
+    {
+      name: "Birria Tacos",
+      price: "2-$10 / 3-$14",
+      image: birriaTacosImg,
+      description: "Your choice of pork sisig or chicken adobo, topped with melted cheese, cilantro, onions, and yummy sauce, grilled and pressed in a corn tortilla."
     },
     {
       name: "Jasmine Rice",

@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 const MainNavbar = () => {
   const [isFullScreenNav, setFullScreenNav] = useState(false);
-  const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.122:3000/images/';
+  const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.com/images/' : 'http://192.168.4.243:3000/images/';
   const navigate = useNavigate();
 
 // images
