@@ -117,8 +117,8 @@ const imgUrl = process.env.NODE_ENV === 'production' ? 'https://kuyakevinsbbq.co
                       <img className="flex-shrink-0 img-fluid rounded" src={menuItem.image} alt={menuItem.name} style={{ width: '80px',height: '60px', boxShadow: '0px 2px 7px rgba(0, 0, 0, 0.9)',filter: 'brightness(110%)'}} />
                       <div className="w-100 d-flex flex-column text-start ps-4">
                         <h5 className="d-flex justify-content-between border-bottom pb-2">
-                          <span style={{paddingRight: '3%'}}>{menuItem.name}</span>
-                          <span className="text-warning">{menuItem.price}</span>
+                          <span className="menu-item-name" style={{paddingRight: '3%'}}>{menuItem.name}</span>
+                          <span className="text-warning menu-item-price">{menuItem.price}</span>
                         </h5>
                         <small className="fst-italic">{menuItem.description}</small>
                       </div>
