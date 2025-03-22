@@ -61,7 +61,7 @@ function Carousel() {
       <img 
         className='img-fluid rounded full-height-image' 
         src={`${imgUrl}${image}`}
-        loading='lazy' 
+        loading='eager'
         alt={`Kuya Kevin Slidwshow Image ${index + 1}`} 
         style={{ width: '100%', height: 'auto', maxHeight: '300px' }} 
       />

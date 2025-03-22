@@ -52,7 +52,7 @@ const LandingPage = (props) => {
               marginTop: '0 auto',
               maxWidth: '700px',
               width: '100%', 
-              zIndex: 1,
+              zIndex: 1
             }}/>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img style={{ width: 'auto', height: 'auto' }} className="img-fluid landing-page-logo" data-wow-delay="0.1s" src={aboutImg1} alt="Kuya Kevins alt logo" />
@@ -92,6 +92,7 @@ const LandingPage = (props) => {
     <Helmet>
         <title>Kuya Kevin's BBQ | Authentic Filipino Fusion Cuisine</title>
         <meta name="description" content="Discover Kuya Kevin's BBQ, offering authentic Filipino fusion cuisine. Enjoy dishes like Pancit, Adobo, and more, made with love and tradition. Visit us today!" />
+        {/* <link rel="preload" href={kuyaKevinImg} as="image" /> */}
         <link rel="canonical" href="https://kuyakevinsbbq.com/" />
       </Helmet>
         </>
