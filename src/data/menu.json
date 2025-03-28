@@ -1,0 +1,71 @@
+{
+    "kuyaKevinsMenu": [
+      {
+        "name": "Lumpia Eggrolls",
+        "price": "1-$4 / 2-$6",
+        "image": "BASE_URL4_Count_Eggroll.jpg",
+        "description": "Eggrolls stuffed with seasoned ground beef, fresh carrots, garlic, water chestnuts, and green onions fried to crispy perfection."
+      },
+      {
+        "name": "Bourbon Chicken",
+        "price": "$15",
+        "image": "BASE_URLBourbon_Chicken_with_Pancit.jpg",
+        "description": "The fan favorite! Bourbon marinated chicken grilled to perfection over an open flame, served with white jasmine rice. *Upgrade pancit noodles for an additional $2"
+      },
+      {
+        "name": "Marinated Fried Wings",
+        "price": "5-$12 / 10-$20",
+        "image": "BASE_URL10_Count_Marinated_Wings_2.jpg",
+        "description": "Kuya Kevin's favorite! Jumbo wings marinated in sinigang juices then fried to a crunchy finish. No sauce needed for this one. Caution, very addicting!"
+      },
+      {
+        "name": "Pork BBQ On A Stick",
+        "price": "1-$8 / 2-$15",
+        "image": "BASE_URLporkstick.jpg",
+        "description": "Marinated pork sliced and grilled to perfection skewered with an onion and pepper medley."
+      },
+      {
+        "name": "Chicken Adobo",
+        "price": "$15",
+        "image": "BASE_URLChicken_Adobo_with_Rice.jpg",
+        "description": "Soy sauce and vinegar marinated chicken slow cooked and shredded. Served over a bed of fresh white jasmine rice. *Upgrade pancit noodles for an additional $2"
+      },
+      {
+        "name": "Chicken Pancit",
+        "price": "$15",
+        "image": "BASE_URLPancit_2.jpg",
+        "description": "Bihon and Vermicelli noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery."
+      },
+      {
+        "name": "Filipino Poutine",
+        "price": "$15",
+        "image": "BASE_URLpoutine.jpeg",
+        "description": "A twist on a Canadian classic! Hot and fresh steak fries topped with lumpia eggroll meat, shredded cheese, and homemade adobo gravy."
+      },
+      {
+        "name": "Pork Sisig",
+        "price": "$15",
+        "image": "BASE_URLsisig.jpg",
+        "description": "Smoked and deep fried pork belly, chopped and sautéed with onions and calamansi juice. Served over a bed of silky white rice."
+      },
+      {
+        "name": "Birria Tacos",
+        "price": "2-$10 / 3-$14",
+        "image": "BASE_URLbirra_tacos.jpg",
+        "description": "Your choice of pork sisig or chicken adobo, topped with melted cheese, cilantro, onions, and yummy sauce, grilled and pressed in a corn tortilla."
+      },
+      {
+        "name": "Jasmine Rice",
+        "price": "$2",
+        "image": "BASE_URLJasmine_Rice.jpg",
+        "description": "Freshly steamed white jasmine rice."
+      },
+      {
+        "name": "Beverages",
+        "price": "$3",
+        "image": "BASE_URLcoca_cola_logo.jpg",
+        "description": "Proudly serving Coke products including Coca-Cola, Diet Coke, and Sprite. Bottled Water available for $2"
+      }
+    ]
+  }
+  
