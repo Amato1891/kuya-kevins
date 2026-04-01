@@ -8,7 +8,7 @@
       },
       {
         "name": "Bourbon Chicken",
-        "price": "$15",
+        "price": "$16",
         "image": "BASE_URLBourbon_Chicken_with_Pancit.jpg",
         "description": "The fan favorite! Bourbon marinated chicken grilled to perfection over an open flame, served with white jasmine rice. *Upgrade pancit noodles for an additional $2"
       },
@@ -26,31 +26,31 @@
       },
       {
         "name": "Chicken Adobo",
-        "price": "$15",
+        "price": "$16",
         "image": "BASE_URLChicken_Adobo_with_Rice.jpg",
         "description": "Soy sauce and vinegar marinated chicken slow cooked and shredded. Served over a bed of fresh white jasmine rice. *Upgrade pancit noodles for an additional $2"
       },
       {
         "name": "Chicken Pancit",
-        "price": "$15",
+        "price": "$16",
         "image": "BASE_URLPancit_2.jpg",
         "description": "Bihon and Vermicelli noodles cooked in soy sauce and chicken broth, tossed in a wok alongside fresh cabbage, carrots, onions, and celery."
       },
       {
         "name": "Filipino Poutine",
-        "price": "$15",
+        "price": "$16",
         "image": "BASE_URLpoutine.jpeg",
         "description": "A twist on a Canadian classic! Hot and fresh steak fries topped with lumpia eggroll meat, shredded cheese, and homemade adobo gravy."
       },
       {
         "name": "Pork Sisig",
-        "price": "$15",
+        "price": "$16",
         "image": "BASE_URLsisig.jpg",
         "description": "Smoked and deep fried pork belly, chopped and sautéed with onions and calamansi juice. Served over a bed of silky white rice."
       },
       {
         "name": "Birria Tacos",
-        "price": "2-$10 / 3-$14",
+        "price": "2-$12 / 3-$15",
         "image": "BASE_URLbirra_tacos.jpg",
         "description": "Your choice of pork sisig or chicken adobo, topped with melted cheese, cilantro, onions, and yummy sauce, grilled and pressed in a corn tortilla."
       },
