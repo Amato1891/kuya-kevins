@@ -72,7 +72,7 @@ const foodTruckIcon = `${imgUrl}food-truck.png`;
 <Container fluid style={{backgroundColor: isFullScreenNav ? '#212529':'transparent'}}>
     <Navbar.Brand className="d-flex align-items-center food-truck-icon">
       <img src={foodTruckIcon} alt="Food Truck Icon" className="me-3" style={{width:'100%'}}/>
-      {isFullScreenNav ? (<div></div>) : (<h1 className="text-warning m-0">Kuya Kevin's</h1>)}
+      {isFullScreenNav ? (<div></div>) : (<span className="text-warning m-0 h1" style={{fontSize: 'inherit'}}>Kuya Kevin's</span>)}
       <Navbar.Toggle aria-controls="navbarCollapse" className='hamburger-icon' onClick={() => setExpanded(!expanded)}>
       <span className="fa fa-bars"></span>
     </Navbar.Toggle>

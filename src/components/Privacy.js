@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Privacy = () => {
     
@@ -19,7 +19,7 @@ return (<>
         <p className="mb-5" style={{textAlign:"center"}}><strong>Effective Date: 01-01-2025</strong></p>
       </header>
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">1. Information We Collect</h3>
+        <h2 className="ff-secondary text-warning fw-normal">1. Information We Collect</h2>
         <p>When you visit our website, we collect information through Google Analytics, which helps us understand how visitors use our site. The information collected includes:</p>
         
         <ul>
@@ -30,7 +30,7 @@ return (<>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">2. Google Analytics</h3>
+        <h2 className="ff-secondary text-warning fw-normal">2. Google Analytics</h2>
         <p>We use Google Analytics to monitor and analyze traffic to our website. Google Analytics collects information such as:</p>
         <ul>
           <li>The pages you visit</li>
@@ -45,7 +45,7 @@ return (<>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">3. How We Use Your Information</h3>
+        <h2 className="ff-secondary text-warning fw-normal">3. How We Use Your Information</h2>
         <p>The information collected through Google Analytics helps us:</p>
         <ul>
           <li>Understand how users interact with our website.</li>
@@ -55,23 +55,23 @@ return (<>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">4. Cookies</h3>
+        <h2 className="ff-secondary text-warning fw-normal">4. Cookies</h2>
         <p>Cookies are small data files stored on your device when you visit our site. These cookies are used to remember your preferences and improve user experience. You can control cookie settings through your browser, including disabling cookies or notifying you when cookies are being used.</p>
         <p>For more details, please visit: <a href="https://www.google.com/policies/technologies/cookies/" target="_blank" rel="noopener noreferrer">How Google Uses Cookies</a>.</p>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">5. Third-Party Services</h3>
+        <h2 className="ff-secondary text-warning fw-normal">5. Third-Party Services</h2>
         <p>We may use third-party services (like Google Analytics) to help us analyze website traffic and improve our website. These third-party services may also collect personal information, and you should review their privacy policies to understand how they handle your data.</p>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">6. Data Security</h3>
+        <h2 className="ff-secondary text-warning fw-normal">6. Data Security</h2>
         <p>We take the security of your information seriously. We implement appropriate technical and organizational measures to protect your data from unauthorized access, alteration, or destruction.</p>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">7. Your Rights</h3>
+        <h2 className="ff-secondary text-warning fw-normal">7. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
           <li>Access the personal data we hold about you.</li>
@@ -82,12 +82,12 @@ return (<>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">8. Changes to This Privacy Policy</h3>
+        <h2 className="ff-secondary text-warning fw-normal">8. Changes to This Privacy Policy</h2>
         <p>We reserve the right to update this privacy policy at any time. Any changes will be posted on this page, and the effective date will be updated accordingly. Please review this privacy policy periodically.</p>
       </section>
 
       <section>
-        <h3 className="ff-secondary text-warning fw-normal">9. Contact Us</h3>
+        <h2 className="ff-secondary text-warning fw-normal">9. Contact Us</h2>
         <p>If you have any questions about this privacy policy or our data practices, please contact us by phone, email or on social!</p>
       </section>
     </div>

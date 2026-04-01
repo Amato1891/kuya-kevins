@@ -22,6 +22,7 @@
     "react-dom": "^18.3.1",
     "react-google-recaptcha": "^3.1.0",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^3.0.0",
     "react-owl-carousel": "^2.3.3",
     "react-places-autocomplete": "^7.3.0",
     "react-router-dom": "^6.23.0",
@@ -34,9 +35,18 @@
   "scripts": {
     "start": "node server.js",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "develop": "react-scripts start"
+  },
+  "reactSnap": {
+    "source": "build",
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +67,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "react-snap": "^1.23.0"
   }
 }

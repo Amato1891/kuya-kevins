@@ -20,39 +20,92 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="192x192" href="favicon-192x192.png">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts (combined into single request) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <!-- Fallback title for crawlers that don't execute JS -->
+    <title>Kuya Kevin's BBQ - Authentic Filipino Fusion Cuisine | Tampa Bay Food Truck</title>
+
     <!-- JSON-LD structured data for search engines -->
-  <script type="application/ld+json">
+    <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "Restaurant",
+      "@context": "https://schema.org",
+      "@type": "FoodEstablishment",
+      "additionalType": "https://schema.org/FoodEstablishment",
       "name": "Kuya Kevin's Filipino Fusion BBQ",
-      "description": "Authentic Filipino cuisine made with love. Discover our menu featuring classic Filipino dishes like Pancit, Adobo, and more.",
+      "description": "Authentic Filipino fusion cuisine made with love. Discover our menu featuring classic Filipino dishes like Pancit, Adobo, Lumpia, and more. Serving the Greater Tampa Bay Area from our food truck.",
       "url": "https://kuyakevinsbbq.com/",
-      "logo": "https://kuyakevinsbbq.com/logo.jpg"
+      "logo": "https://kuyakevinsbbq.com/images/logo.png",
+      "image": "https://kuyakevinsbbq.com/images/hero.jpg",
+      "telephone": "+1-727-479-2614",
+      "email": "Kuyakevinsbbq@gmail.com",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.8394,
+          "longitude": -82.79662
+        },
+        "geoRadius": "50000"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pinellas Park",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.8394,
+        "longitude": -82.79662
+      },
+      "servesCuisine": ["Filipino", "BBQ", "Fusion"],
+      "menu": "https://kuyakevinsbbq.com/menu",
+      "priceRange": "$$",
+      "acceptsReservations": true,
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61560228483831",
+        "https://www.instagram.com/kuyakevinsbbq/",
+        "https://x.com/KuyaKevinsBBQ",
+        "https://www.tiktok.com/@kuyakevinsbbq",
+        "https://www.snapchat.com/add/kuyakevinsbbq"
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://kuyakevinsbbq.com/book-us"
+        }
+      }
     }
     </script>
+
     <!-- Open Graph meta tags for social media sharing -->
-  <meta property="og:title" content="Kuya Kevins - Authentic Filipino Cuisine">
-  <meta property="og:description" content="Welcome to Kuya Kevins! Indulge in authentic Filipino cuisine made with love. Explore our menu featuring delicious dishes such as Pancit, Adobo, and more.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kuyakevinsbbq.com/">
-  <!-- Twitter Card meta tags for Twitter sharing -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kuya Kevins - Authentic Filipino Cuisine">
-  <meta name="twitter:description" content="Welcome to Kuya Kevins! Indulge in authentic Filipino cuisine made with love. Explore our menu featuring delicious dishes such as Pancit, Adobo, and more.">
+    <meta property="og:title" content="Kuya Kevin's BBQ - Authentic Filipino Fusion Cuisine">
+    <meta property="og:description" content="Welcome to Kuya Kevin's BBQ! Indulge in authentic Filipino fusion cuisine made with love. Explore our menu featuring delicious dishes such as Pancit, Adobo, Lumpia, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kuyakevinsbbq.com/">
+    <meta property="og:image" content="https://kuyakevinsbbq.com/images/hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kuya Kevin's Filipino Fusion BBQ Food Truck">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Kuya Kevin's BBQ">
+
+    <!-- Twitter Card meta tags for Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@KuyaKevinsBBQ">
+    <meta name="twitter:title" content="Kuya Kevin's BBQ - Authentic Filipino Fusion Cuisine">
+    <meta name="twitter:description" content="Welcome to Kuya Kevin's BBQ! Indulge in authentic Filipino fusion cuisine made with love. Explore our menu featuring delicious dishes such as Pancit, Adobo, Lumpia, and more.">
+    <meta name="twitter:image" content="https://kuyakevinsbbq.com/images/hero.jpg">
+    <meta name="twitter:image:alt" content="Kuya Kevin's Filipino Fusion BBQ Food Truck">
   </head>
   <body >
     <noscript>You need to enable JavaScript to run this app.</noscript>

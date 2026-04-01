@@ -1,4 +1,5 @@
 import React from 'react';
+import '../utils/jquery-global'; // Must load before owl.carousel
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -61,8 +62,8 @@ function Carousel() {
       <img 
         className='img-fluid rounded full-height-image' 
         src={`${imgUrl}${image}`}
-        loading='eager'
-        alt={`Kuya Kevin Slidwshow Image ${index + 1}`} 
+        loading={index === 0 ? 'eager' : 'lazy'}
+        alt={`Kuya Kevin's BBQ Slideshow Image ${index + 1}`} 
         style={{ width: '100%', height: 'auto', maxHeight: '300px' }} 
       />
     </div>

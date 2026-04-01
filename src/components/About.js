@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const AboutSection = () => {
 
@@ -11,7 +11,7 @@ return (<>
 <Helmet>
         <title>About Us - Kuya Kevin's BBQ</title>
         <meta name="description" content="Learn more about Kuya Kevin's BBQ, our story, and our mission to bring authentic Filipino fusion cuisine to the community." />
-        <link rel="canonical" href="https://kuyakevinsbbq.com/about-us" />
+        <link rel="canonical" href="https://kuyakevinsbbq.com/about" />
       </Helmet>
   <div className="container-xxl py-5" style={{ position: 'relative', textAlign: 'center', zIndex:9}}>
     <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundImage: `url(${usaPhilFlag})`, opacity: 0.1 }}></div>
@@ -29,7 +29,7 @@ return (<>
                 <h3 className="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up"><b>10+</b></h3>
                 <div className="ps-4">
                   <p className="mb-0">Years of</p>
-                  <h6 className="text-uppercase mb-0">Serving Excellence</h6>
+                  <h4 className="text-uppercase mb-0">Serving Excellence</h4>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ return (<>
                 <h3 className="flex-shrink-0 display-5 text-warning mb-0" data-toggle="counter-up"><b>100+</b></h3>
                 <div className="ps-4">
                   <p className="mb-0">Events</p>
-                  <h6 className="text-uppercase mb-0">Hosted</h6>
+                  <h4 className="text-uppercase mb-0">Hosted</h4>
                 </div>
               </div>
             </div>

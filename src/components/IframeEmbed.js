@@ -12,7 +12,7 @@ const IframeEmbed = () => {
         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcltampabay%2Fposts%2Fpfbid0RdxMEExb9zJHLDaMtDxVqSK4CH3iXeTFpSbjsRLhVDyHFHKAzH4o3kgVCBUVd4kvl&show_text=true&width=500"
         className="responsive-iframe"
         frameBorder="0"
-        allowFullScreen="true"
+        allowFullScreen={true}
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
       />
     </div>

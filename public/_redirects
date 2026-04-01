@@ -1,2 +1,5 @@
+# Enforce non-www canonical domain
+https://www.kuyakevinsbbq.com/* https://kuyakevinsbbq.com/:splat 301!
+
+# SPA fallback — only applies if no prerendered file exists for the route
 /* /index.html 200
-/www.kuyakevinsbbq.com  /kuyakevinsbbq.com 301

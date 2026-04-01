@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const ContactSection = () => {
   return (
@@ -13,17 +13,17 @@ const ContactSection = () => {
       <div className="container">
         <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
           <h1 className="section-title ff-secondary text-center text-warning fw-normal">Contact Us</h1>
-          <h3 className="mb-5">Drop us a line.</h3>
+          <h2 className="mb-5">Drop us a line.</h2>
         </div>
         <div className="row g-4">
           <div className="col-12">
             <div className="row gy-4">
               <div className="col-md-4">
-                <h5 className="section-title ff-secondary fw-normal text-start text-warning">By Email</h5>
+                <h3 className="section-title ff-secondary fw-normal text-start text-warning">By Email</h3>
                 <p><i className="fa fa-envelope-open text-warning me-2"></i><a href="mailto:Kuyakevinsbbq@gmail.com" style={{color:'black'}}>Kuyakevinsbbq@gmail.com</a></p>
               </div>
               <div className="col-md-4">
-                <h5 className="section-title ff-secondary fw-normal text-start text-warning">By Phone</h5>
+                <h3 className="section-title ff-secondary fw-normal text-start text-warning">By Phone</h3>
                 <p><i className="fa fa-phone text-warning me-2"></i><a href="tel:727-479-2614" style={{color:'black'}}>727-479-2614</a></p>
               </div>
             </div>
