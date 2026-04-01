@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "react-scripts build && npx react-snap",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "develop": "react-scripts start"
@@ -42,6 +42,7 @@
   "reactSnap": {
     "source": "build",
     "inlineCss": true,
+    "enabled": false,
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
